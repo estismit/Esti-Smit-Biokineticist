@@ -29,16 +29,6 @@ export default function RootLayout({ children }) {
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-            alt=""
-          />
-        </noscript>
-
         {/* Fires an additional PageView on client-side route changes (e.g. future internal links between pages) without duplicating the initial load's PageView */}
         <FacebookPixelPageView />
 
