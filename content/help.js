@@ -1,4 +1,4 @@
-const SITE = "https://www.estismitbio.com/";
+const SITE = "https://www.estismitbio.co.za/";
 const URL = SITE + "can-biokinetics-help-me";
 const BODY_AREAS = ["Neck / shoulders","Back / lower back","Hip / groin","Knee","Ankle / foot","Elbow / wrist / hand","Multiple areas"];
 const opts = (labels, next) => labels.map((l) => ({ l, next }));
