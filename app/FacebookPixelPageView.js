@@ -9,8 +9,6 @@ function PixelRouteTracker() {
   const isFirstLoad = useRef(true);
 
   useEffect(() => {
-    // Skip the very first render — the base pixel script in layout.js
-    // already fires the initial PageView for this load.
     if (isFirstLoad.current) {
       isFirstLoad.current = false;
       return;
