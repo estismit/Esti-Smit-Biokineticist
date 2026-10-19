@@ -82,11 +82,13 @@ export default function MedicalAid() {
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 12 }}><h4 style={H3}>Vitality Health Check</h4><span style={badge}>Up to 22,500 Vitality points</span></div>
               <p style={P}>Complete your annual Vitality Health Check to assess important health indicators and earn points towards your Vitality status.</p>
               <p style={P}>Eligible members receive one funded Vitality Health Check per year.</p>
+              <div style={{ marginTop: "auto", paddingTop: 8, display: "flex" }}><Button variant="primary" href={waText("Hi! I'd like to book a Discovery Vitality health check.")} iconRight="arrow-right">Book Now</Button></div>
             </article>
             <article data-reveal="" style={card}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 12 }}><h4 style={H3}>Vitality Fitness Assessment</h4><span style={badge}>R580</span></div>
               <p style={P}>Discover your current fitness level through a professional assessment with a registered Biokineticist.</p>
               <p style={P}>Earn up to <strong style={STRONG}>10,000 additional Vitality points</strong>, depending on your results and the applicable Vitality rules.</p>
+              <div style={{ marginTop: "auto", paddingTop: 8, display: "flex" }}><Button variant="primary" href={waText("Hi! I'd like to book a Discovery Vitality fitness assessment.")} iconRight="arrow-right">Book Now</Button></div>
             </article>
           </div>
           <div data-reveal="" style={panel("#fff", true)}>
@@ -108,10 +110,12 @@ export default function MedicalAid() {
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 12 }}><h4 style={H3}>Multiply Health Assessment</h4></div>
               <p style={P}>Complete your annual health assessment and take advantage of the health benefits available through your Momentum Multiply membership.</p>
               <p style={P}>Eligible members can receive one funded health assessment per year.</p>
+              <div style={{ marginTop: "auto", paddingTop: 8, display: "flex" }}><Button variant="primary" href={waText("Hi! I'd like to book a Momentum Multiply health assessment.")} iconRight="arrow-right">Book Now</Button></div>
             </article>
             <article data-reveal="" style={card}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 12 }}><h4 style={H3}>Multiply Fitness Assessment</h4><span style={badge}>R480</span></div>
               <p style={P}>Understand your fitness level, identify areas for improvement and work towards your Multiply fitness rewards.</p>
+              <div style={{ marginTop: "auto", paddingTop: 8, display: "flex" }}><Button variant="primary" href={waText("Hi! I'd like to book a Momentum Multiply fitness assessment.")} iconRight="arrow-right">Book Now</Button></div>
             </article>
           </div>
           <div data-reveal="" style={panel("var(--grey-bg)", false)}>
