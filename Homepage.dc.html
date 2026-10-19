@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Biokineticist in Paarl | Esti Smit Biokinetics</title>
+  <meta name="description" content="HPCSA-registered biokineticists in Paarl. Personalised exercise therapy for back pain, injury and post-op rehab. Medical aid friendly. Book your assessment.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.estismitbio.com/">
+  <meta name="theme-color" content="#e58749">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="geo.region" content="ZA-WC">
+  <meta name="geo.placename" content="Paarl">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:site_name" content="Esti Smit Biokinetics">
+  <meta property="og:title" content="Biokineticist in Paarl | Esti Smit Biokinetics">
+  <meta property="og:description" content="Move beyond pain. Personalised biokinetics programmes for pain, injury, surgery recovery and healthy ageing at Winelands Medical Centre, Paarl.">
+  <meta property="og:url" content="https://www.estismitbio.com/">
+  <meta property="og:image" content="https://www.estismitbio.com/og-image.jpg">
+  <meta property="og:image:alt" content="Esti Smit, biokineticist in Paarl, assessing a client's leg strength at Winelands Medical Centre">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biokineticist in Paarl | Esti Smit Biokinetics">
+  <meta name="twitter:description" content="Personalised biokinetics programmes in Paarl. Book your assessment or send us a WhatsApp.">
+  <meta name="twitter:image" content="https://www.estismitbio.com/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="preload" as="image" href="assets/hero-img.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/shape.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/base.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/styles.css">
+  <script src="analytics.js"></script>
+  <script src="reveal.js"></script>
+  <script src="fitness-bg.js"></script>
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.js"></script>
+  <script src="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: auto; }
+    body { margin: 0; background: #fff; font-family: var(--font-body); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+    a { color: var(--orange-dark); }
+    a:hover { color: var(--orange); }
+    [data-stars] svg { fill: currentColor; }
+    @keyframes esb-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { [style*="esb-marquee"] { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--charcoal); background: #fff;">
+
+  <header style="position: sticky; top: 0; z-index: 50; background: var(--header-bg); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 24px;">
+      <a href="/" aria-label="Esti Smit Biokinetics — home" style="display: flex;">
+        <img src="assets/logo-img.png" alt="Esti Smit Biokineticist — Move Better | Feel Stronger | Live Well" width="133" height="48" style="height: 52px; width: auto; display: block;">
+      </a>
+      <nav aria-label="Main" style="display: {{ desktopNav }}; align-items: center; gap: 16px; white-space: nowrap;">
+        <sc-for list="{{ nav }}" as="l" hint-placeholder-count="5">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.NavLink" href="{{ l.href }}" hint-size="auto,28px">{{ l.label }}</x-import>
+        </sc-for>
+      </nav>
+      <div style="display: {{ desktopNav }}; align-items: center; gap: 12px; white-space: nowrap; flex-shrink: 0;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="secondary" size="sm" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="130px,42px">WhatsApp</x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" size="sm" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="200px,42px">{{ bookLabel }}</x-import>
+      </div>
+      <button type="button" aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" aria-controls="mobile-nav" onClick="{{ toggleMenu }}" style="display: {{ mobileToggle }}; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--charcoal); cursor: pointer;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="{{ menuIcon }}" size="{{ 24 }}" hint-size="24px,24px"></x-import>
+      </button>
+    </div>
+    <nav id="mobile-nav" aria-label="Mobile" style="display: {{ mobileNav }}; flex-direction: column; gap: 16px; padding: 16px 24px 24px; border-top: 1px solid var(--line); background: #fff;">
+      <sc-for list="{{ nav }}" as="l" hint-placeholder-count="5">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="color: var(--ink); font-weight: 600; font-size: 16px; padding: 10px 2px; text-decoration: none;">{{ l.label }}</a>
+      </sc-for>
+      <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" full-width="{{ true }}" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="100%,50px">Book Your Assessment</x-import>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoSection" image="assets/hero-img.jpg" image-alt="Esti Smit, biokineticist in Paarl, assessing a client's leg strength at Winelands Medical Centre" scrim="hero" hint-size="100%,640px">
+      <div style="max-width: 896px; margin: 0 auto; padding: clamp(96px, 12vw, 160px) 24px clamp(112px, 13vw, 176px); text-align: center;">
+        <h1 data-reveal="" data-reveal-delay="0" style="margin: 0 0 24px; font-family: var(--font-body); text-transform: uppercase; font-size: 16px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); color: var(--orange); line-height: 1.5; text-shadow: var(--text-shadow-on-photo);">Biokineticist in Paarl</h1>
+        <p data-reveal="" data-reveal-delay="120" style="color: #fff; font-family: var(--font-heading); font-size: var(--text-h1); line-height: 1.08; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 28px; text-wrap: balance;">Still in Pain?<br>Let's Find What's Really Causing It.</p>
+        <p data-reveal="" data-reveal-delay="240" style="color: rgba(255,255,255,.85); font-size: 18px; line-height: 1.625; max-width: 672px; margin: 0 auto 40px; text-wrap: pretty;">Registered biokineticists at Winelands Medical Centre, Paarl. We help with back pain, neck pain, sports injuries and rehab after surgery by finding the root cause, not just treating where it hurts.</p>
+        <div data-reveal="" data-reveal-delay="360" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="240px,52px">Book Your Assessment</x-import>
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="whatsapp" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="190px,52px">WhatsApp Us</x-import>
+        </div>
+        <p data-reveal="" data-reveal-delay="480" style="margin: 20px 0 0; font-size: 14px; font-weight: 600; color: rgba(255,255,255,.8); text-shadow: var(--text-shadow-on-photo);">No referral needed · Medical aid friendly · Free phone call to see if we can help</p>
+      </div>
+    </x-import>
+
+    <section aria-label="Why patients trust us" style="background: var(--blue); overflow: hidden; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12);">
+      <div style-hover="animation-play-state: paused;" style="display: flex; width: max-content; animation: esb-marquee 90s linear infinite;">
+        <sc-for list="{{ marqueeSets }}" as="m" hint-placeholder-count="4">
+          <div aria-hidden="{{ m.hidden }}" style="display: flex; align-items: center; gap: 28px; padding-right: 28px; flex-shrink: 0; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; white-space: nowrap;">
+            <span aria-label="5 star Google reviews" style="display: inline-flex; align-items: center; gap: 10px;">
+              <span aria-hidden="true" data-stars="5" style="display: inline-flex; gap: 2px; color: var(--orange);">
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="star" size="{{ 15 }}" color="var(--orange)" hint-size="15px,15px"></x-import>
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="star" size="{{ 15 }}" color="var(--orange)" hint-size="15px,15px"></x-import>
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="star" size="{{ 15 }}" color="var(--orange)" hint-size="15px,15px"></x-import>
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="star" size="{{ 15 }}" color="var(--orange)" hint-size="15px,15px"></x-import>
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="star" size="{{ 15 }}" color="var(--orange)" hint-size="15px,15px"></x-import>
+              </span>
+              Google reviews
+            </span>
+            <span aria-hidden="true" style="color: var(--orange-light);">·</span><span>500+ clients helped</span>
+            <span aria-hidden="true" style="color: var(--orange-light);">·</span><span>HPCSA registered</span>
+            <span aria-hidden="true" style="color: var(--orange-light);">·</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="root-cause" tone="white" width="{{ 1152 }}" padding-y="{{ 128 }}" hint-size="100%,820px">
+      <div data-reveal="" style="margin-bottom: 64px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.SectionHeading" eyebrow="Why the pain keeps coming back" eyebrow-tone="warmInk" title="You've Rested It, Stretched It and Had It Massaged. So Why Does It Still Hurt?" subtitle="Often, the place that hurts isn't the real problem. After an injury, surgery or years of pain, some muscles stop working properly. Other muscles and joints take over the extra work, and that's where the back, knee, neck or shoulder pain starts. Treating only the sore spot brings short relief, and then it comes back." max-width="{{ 768 }}" hint-size="100%,300px"></x-import>
+      </div>
+      <ol style="list-style: none; margin: 0 0 56px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 28px;">
+        <sc-for list="{{ rootSteps }}" as="s" hint-placeholder-count="3">
+          <li data-reveal="" style="display: flex; flex-direction: column; gap: 16px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 36px 30px; transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;" style-hover="transform: translateY(-8px); box-shadow: var(--shadow-card-hover); border-color: transparent;">
+            <span data-reveal="" data-reveal-type="pop" data-reveal-delay="{{ s.chipDelay }}" style="display: inline-flex; align-self: flex-start;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.IconChip" variant="{{ s.accent }}" size="{{ 56 }}" hint-size="56px,56px"><span style="font-family: var(--font-heading); font-size: 20px; font-weight: 600;">{{ s.n }}</span></x-import></span>
+            <h3 style="font-family: var(--font-heading); font-size: 24px; font-weight: 500; letter-spacing: var(--tracking-display); line-height: 1.25; margin: 0; color: var(--charcoal);">{{ s.title }}</h3>
+            <p style="font-size: 16px; font-weight: 600; line-height: var(--leading-body); color: var(--muted); margin: 0;">{{ s.text }}</p>
+          </li>
+        </sc-for>
+      </ol>
+      <div style="display: flex; justify-content: center;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="320px,52px">Find Out What's Causing Your Pain</x-import>
+      </div>
+    </x-import>
+
+    <section id="conditions" style="position: relative; overflow: hidden; padding: 128px 0; scroll-margin-top: 84px; background: var(--blue); color: #fff;">
+      <canvas id="esb-fitness-bg" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block;"></canvas>
+      <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 0 24px; pointer-events: none;">
+      <div data-reveal="" style="max-width: 768px; margin: 0 auto 64px; text-align: center; pointer-events: auto;">
+        <h2 style="font-family: var(--font-heading); font-size: calc(var(--text-h2) * 1.15); font-weight: 500; line-height: var(--leading-tight); letter-spacing: var(--tracking-display); color: #fff; margin: 0; text-wrap: balance; text-shadow: 0 0 18px #2a5f9e, 0 0 6px #2a5f9e, 0 2px 12px rgba(0,0,0,.25);">What condition are you dealing with?</h2>
+        <p style="font-size: calc(var(--text-lead) * 1.15); font-weight: 600; line-height: var(--leading-body); color: #fff; margin: 20px 0 0; text-wrap: pretty; text-shadow: 0 0 18px #2a5f9e, 0 0 6px #2a5f9e, 0 2px 12px rgba(0,0,0,.25);">From joint pain and injuries to balance, chronic conditions and sports performance, find what you're dealing with and see how we help.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 28px; align-items: start; max-width: 1152px; margin: 0 auto;">
+        <sc-for list="{{ regions }}" as="r" hint-placeholder-count="11">
+          <article data-reveal="" style="pointer-events: auto; background: #fff; border-radius: var(--radius-card-lg); padding: 44px 40px; min-height: 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; color: var(--charcoal); transition: transform .35s ease, box-shadow .35s ease;" style-hover="transform: translateY(-6px); box-shadow: 0 24px 48px -18px rgba(0,0,0,.35);">
+            <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 500; letter-spacing: var(--tracking-display); line-height: 1.2; margin: 0;">{{ r.title }}</h3>
+            <p style="font-size: 17px; font-weight: 600; line-height: var(--leading-body); color: var(--ink); margin: 0;">{{ r.text }}</p>
+            <button type="button" onClick="{{ r.toggle }}" aria-expanded="{{ r.expanded }}" aria-controls="{{ r.panelId }}" style="display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; margin-top: auto; padding: 16px 0 6px; border: 0; background: transparent; cursor: pointer; font-family: var(--font-body); font-size: 14px; font-weight: 700; color: var(--orange-dark); text-align: left;">
+              {{ r.linkLabel }}
+              <span style="display: inline-flex; transition: transform .3s ease; transform: {{ r.chevron }};">
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="chevron-down" size="{{ 16 }}" stroke-width="{{ 2 }}" hint-size="16px,16px"></x-import>
+              </span>
+            </button>
+            <ul id="{{ r.panelId }}" aria-label="{{ r.listLabel }}" style="display: {{ r.display }}; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 14px 0 0; border-top: 1px solid var(--line);">
+              <sc-for list="{{ r.tags }}" as="tag" hint-placeholder-count="5">
+                <li style="display: flex;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.TagPill" hint-size="auto,26px">{{ tag }}</x-import></li>
+              </sc-for>
+            </ul>
+          </article>
+        </sc-for>
+      </div>
+      </div>
+    </section>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="stories" tone="grey" width="{{ 1280 }}" padding-y="{{ 128 }}" hint-size="100%,1100px">
+      <div data-reveal="" style="margin-bottom: 64px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.SectionHeading" eyebrow="Real results" eyebrow-tone="warmInk" title="Success Stories" hint-size="100%,100px"></x-import>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 24px;">
+        <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="4">
+          <article data-reveal="" style="height: 100%;">
+            <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.TestimonialCard" dc-props="{{ t }}" hint-size="100%,760px"></x-import>
+          </article>
+        </sc-for>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoSection" image="assets/faq-bg.jpg" image-alt="Biokineticist guiding a client through a single-leg balance exercise on a balance trainer in Paarl" scrim="hero" hint-size="100%,900px">
+      <div id="faq" style="max-width: 1024px; margin: 0 auto; padding: 128px 24px; scroll-margin-top: 84px;">
+      <div data-reveal="" style="margin-bottom: 56px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.SectionHeading" eyebrow="Questions" eyebrow-tone="warm" on-dark="{{ true }}" on-photo="{{ true }}" title="Frequently Asked Questions" hint-size="100%,100px"></x-import>
+      </div>
+      <div style="background: rgba(255,255,255,.72); backdrop-filter: blur(4px); border-radius: var(--radius-card-lg); padding: 12px 32px;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.FaqAccordion" items="{{ faqs }}" default-open="{{ 0 }}" hint-size="100%,460px"></x-import></div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="book" tone="blue" grain="{{ true }}" width="{{ 768 }}" padding-y="{{ 128 }}" hint-size="100%,520px">
+      <div data-reveal="" style="text-align: center;">
+        <h2 style="font-family: var(--font-heading); font-size: clamp(32px, 3.6vw, 44px); font-weight: 500; line-height: 1.2; letter-spacing: var(--tracking-display); color: #fff; max-width: 720px; margin: 0 auto 40px; text-wrap: balance;">Pain doesn't have to become your normal. Let's find the cause and build a personalised plan that gets you moving confidently again.</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="white" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="240px,52px">Book Your Assessment</x-import>
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="ghostWhite" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="240px,52px">Send Us a WhatsApp</x-import>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="contact" tone="white" width="{{ 1024 }}" padding-y="{{ 128 }}" hint-size="100%,700px">
+      <div data-reveal="" style="margin-bottom: 56px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.SectionHeading" eyebrow="Get in touch" eyebrow-tone="cool" title="Come See Us, or Send a Message" hint-size="100%,100px"></x-import>
+      </div>
+      <div data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.InfoCard" icon="map-pin" title="Visit the practice" hint-size="100%,120px">
+          <address style="font-style: normal;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Winelands+Medical+Centre+1D+New+Eskdale+Street+Paarl" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Winelands Medical Centre<br>1D New Eskdale Street, De Zoete Inval<br>Southern Paarl</a></address>
+        </x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.InfoCard" icon="phone" title="Call or WhatsApp" hint-size="100%,120px">
+          <a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">068 610 4880</a><br>
+          <span style="font-size: 12px;">Emergencies (personal): <a href="https://wa.me/27729761332" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">072 976 1332</a></span>
+        </x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.InfoCard" icon="mail" title="Email" style="grid-column: 1 / -1;" hint-size="100%,90px">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">esti.healthplus@gmail.com</a>
+        </x-import>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="whatsapp" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="240px,52px">Send Us a WhatsApp</x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="240px,52px">Book Your Assessment</x-import>
+      </div>
+    </x-import>
+
+  </main>
+
+  <footer style="background: #fff; color: var(--charcoal); border-top: 1px solid var(--line); padding: 80px 0 40px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="align-self: flex-start; display: inline-flex;"><img src="assets/logo-img.png" alt="Esti Smit Biokineticist" width="133" height="48" style="height: 52px; width: auto; display: block;"></a>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; line-height: 1.6; color: var(--muted);">HPCSA-registered biokineticists helping you move beyond pain, recover stronger and stay active.</p>
+        <address style="font-style: normal;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Winelands+Medical+Centre+1D+New+Eskdale+Street+Paarl" target="_blank" rel="noopener" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; align-items: flex-start; line-height: 1.6;"><span style="display: inline-flex; padding-top: 3px;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="map-pin" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import></span><span>Winelands Medical Centre<br>1D New Eskdale Street, De Zoete Inval<br>Paarl 7646</span></a></address>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Menu</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="Homepage.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Home</a></li>
+          <li><a href="Can%20Biokinetics%20Help%20Me.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Can Biokinetics Help Me?</a></li>
+          <li><a href="Homepage.dc.html#conditions" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">What We Treat</a></li>
+          <li><a href="Medical%20Aid.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Medical Aid</a></li>
+          <li><a href="Homepage.dc.html#stories" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Testimonials</a></li>
+          <li><a href="Homepage.dc.html#faq" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">FAQ</a></li>
+          <li><a href="Blog.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Blog</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Contact</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="phone" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>068 610 4880</a></li>
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="message-circle" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>WhatsApp us</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="mail" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>esti.healthplus@gmail.com</a></li>
+          <li><a href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="calendar" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>Book Your Assessment</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Hours</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; font-size: 14px; font-weight: 600; color: var(--muted);">
+          <dt style="color: var(--charcoal);">Mon – Fri</dt><dd style="margin: 0;">08:00 – 16h00</dd>
+          <dt style="color: var(--charcoal);">Saturdays</dt><dd style="margin: 0;">Closed</dd>
+          <dt style="color: var(--charcoal);">Sundays</dt><dd style="margin: 0;">Closed</dd>
+        </dl>
+      </div>
+    </div>
+    <div style="max-width: 1280px; margin: 56px auto 0; padding: 24px 24px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted);">
+      <span>© 2026 Esti Smit Biokinetics. Registered Biokineticist, HPCSA. All rights reserved.</span>
+      <span>Biokineticist in Paarl, Western Cape</span>
+    </div>
+  </footer>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const BOOK = "https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94";
+const SITE = "https://www.estismitbio.com/";
+const waLink = (n) => "https://wa.me/27686104880?text=" + encodeURIComponent("Hi! I'd like to get started with the " + n.replace(/™/g, "").trim() + " programme.");
+
+const NAV = [
+  { label: "Home", href: "Homepage.dc.html" },
+  { label: "What We Treat", href: "#conditions" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Medical Aid", href: "Medical%20Aid.dc.html" },
+  { label: "Can Biokinetics Help Me?", href: "Can%20Biokinetics%20Help%20Me.dc.html" },
+  { label: "Blog", href: "Blog.dc.html" },
+];
+const PROGRAMMES = [
+  { num: "01", name: "Move Beyond Pain™", blurb: "For ongoing pain that's stopping you from enjoying life.", accent: "orange", tags: ["Back pain","Neck pain","Hip pain","Shoulder pain","Knee pain","Arthritis","Ankle pain","Sciatica","Chronic pain","Tendinopathies","Repetitive strain injuries"] },
+  { num: "02", name: "Recover Stronger™", blurb: "Recover safely after surgery or injury.", accent: "blue", tags: ["ACL rehab","Shoulder surgery","Hip replacements","Knee replacements","Fractures","Sports injuries","Tendon repairs","Post-operative rehabilitation"] },
+  { num: "03", name: "Move Better™", blurb: "Improve mobility, posture and strength before injuries start.", accent: "orange", tags: ["Poor posture","Tight muscles","Weakness","Limited mobility","Balance problems","Frequent stiffness","Office workers","New moms","People wanting to prevent injuries"] },
+  { num: "04", name: "Perform Better™", blurb: "Helping active people improve performance, recover faster, and reduce their risk of injury.", accent: "blue", tags: ["Golfers","Runners","Cyclists","Padel","CrossFit","HYROX","Active Adults"] },
+  { num: "05", name: "Healthy Living™", blurb: "Exercise is medicine. Improve your health through safe, guided movement.", accent: "orange", tags: ["Diabetes","High blood pressure","Obesity","High cholesterol","Metabolic syndrome","Weight management","Cancer rehabilitation","Cardiac rehabilitation"] },
+  { num: "06", name: "Stay Active for Life™", blurb: "Helping you stay independent, strong and active as you age.", accent: "blue", tags: ["Over 50s","Over 60s","Osteoporosis","Arthritis","Balance issues","Fall prevention","General weakness","Joint stiffness"] },
+].map((p) => ({ ...p, href: waLink(p.name) }));
+const REGIONS = [
+  { key: "knee", title: "Knee Pain & Injuries", text: "From everyday knee pain to sports injuries, arthritis, ACL injuries and post-surgery rehab, we assess the whole movement chain to find what’s contributing to your pain and build strength where it’s needed.", tags: ["General knee pain","ACL rehab","Runner's knee","Patellofemoral pain","Meniscus injuries","Osgood-Schlatter","Arthritis","Knee replacement rehab"] },
+  { key: "hip", title: "Hip Pain & Injuries", text: "Hip pain when walking, running, climbing stairs or getting up from a chair? Maybe it aches after sitting for too long, feels stiff in the mornings, or stops you from exercising like you used to. We can help you move more comfortably and confidently again.", tags: ["Hip impingement","Arthritis","Bursitis","Groin strain","Hip replacement rehab","Fracture recovery"] },
+  { key: "neck & shoulder", title: "Neck & Shoulder Pain", text: "Neck or shoulder pain when working at a desk, driving, exercising or reaching overhead? Maybe you wake up stiff, struggle to turn your neck, or feel tension building through your shoulders as the day goes on. We can help you get moving freely again.", tags: ["Rotator cuff injuries","Impingement","Labrum tears","Frozen shoulder","Tendinopathy","Dislocations","Shoulder surgery rehab","Whiplash","Nerve pain down the arm","Tension headaches","Desk posture","Stiffness"] },
+  { key: "low back", title: "Low Back Pain", text: "Lower back pain when sitting, standing, bending, lifting or exercising? Maybe your back feels stiff when you wake up, aches after a long day, or the same pain just keeps coming back. We can help you get stronger and move with confidence again.", tags: ["Disc injuries","Sciatica","Spinal stenosis","Spondylolisthesis","Muscle spasm","Chronic back pain"] },
+  { key: "foot & ankle", title: "Foot & Ankle Pain", text: "Foot or ankle pain when walking, running, jumping or standing for long periods? Maybe your ankle feels unstable, your feet ache by the end of the day, or an old injury keeps bothering you. We can help you build strength and get back to moving comfortably.", tags: ["Plantar fasciitis","Achilles tendinopathy","Ankle sprains","Flat feet","Shin splints","Ligament surgery rehab"] },
+  { key: "elbow & wrist", title: "Elbow & Wrist Pain", text: "Elbow or wrist pain when lifting, gripping, typing, playing sport or doing everyday tasks? Maybe it hurts when carrying something, opening a jar or putting weight through your hands. We can help you rebuild strength and get back to using your arm comfortably.", tags: ["Tennis elbow","Golfer's elbow","Carpal tunnel","Wrist fractures","Repetitive strain injuries"] },
+  { key: "balance & posture", title: "Balance, Posture & Healthy Ageing", text: "For older adults who want to stay steady, upright and independent. We build strength, balance and confidence so everyday movement feels safer.", tags: ["Fall prevention","Poor balance","Rounded posture","Osteoporosis","Joint stiffness","General weakness","Over 60s"] },
+  { key: "disability", title: "Disabilities & Neurological Conditions", text: "Exercise adapted to your body and your goals. We work at your pace to improve strength, mobility and independence in daily life.", tags: ["Stroke recovery","Cerebral palsy","Multiple sclerosis","Parkinson's disease","Spinal cord injury","Traumatic brain injury","Amputee rehab","Intellectual disability"] },
+  { key: "sports performance", title: "Athletes & Sports Performance", text: "For active people who want to perform better and stay injury-free. We test how you move, find the weak links and build a programme around your sport.", tags: ["Runners","Cyclists","Golfers","Padel","CrossFit","HYROX","Return to sport","Injury prevention","And more…"] },
+  { key: "chronic", title: "Chronic Conditions", text: "Exercise is medicine. Safe, supervised exercise helps you manage long-term conditions, improve your health and feel more in control.", tags: ["Diabetes","High blood pressure","High cholesterol","Obesity","Metabolic syndrome","Osteoporosis","Arthritis","Cardiac rehabilitation","Cancer rehabilitation"] },
+];
+const ROOT_STEPS = [
+  { n: "01", accent: "orange", title: "We find the muscles that switched off.", text: "A thorough assessment shows us what isn't doing its job." },
+  { n: "02", accent: "blue", title: "We get them working again.", text: "Targeted exercises wake up and strengthen those muscles." },
+  { n: "03", accent: "orange", title: "Your body settles down.", text: "The overworked muscles and joints get relief, and the pain eases." },
+];
+const STEPS = [
+  { n: "01", title: "Assess", text: "Understand the real cause." },
+  { n: "02", title: "Restore", text: "Reduce pain. Improve movement." },
+  { n: "03", title: "Strengthen", text: "Build confidence." },
+  { n: "04", title: "Perform", text: "Return to doing what you love." },
+  { n: "05", title: "Maintain", text: "Prevent future injuries." },
+];
+const WHY = [
+  { icon: "shield-check", text: "Registered Biokineticist" },
+  { icon: "target", text: "Evidence-Based Care" },
+  { icon: "heart-handshake", text: "Medical Aid Friendly" },
+  { icon: "users", text: "Personalised Programmes" },
+  { icon: "star", text: "Google 5-Star Reviews" },
+  { icon: "heart", text: "Individual Attention" },
+  { icon: "activity", text: "Root Cause Focus" },
+  { icon: "award", text: "Long-Term Results" },
+];
+const INCLUDED = ["Comprehensive Assessment","Root Cause Analysis","Personalised Recovery Plan","Guided Exercise Sessions","Home Exercise Programme","Progress Tracking","Education","WhatsApp Support"];
+const TEAM = [
+  { image: "assets/team-img-1.jpg", name: "Esti Smit" },
+  { image: "assets/team-img-2.jpg", name: "Zani Van Zyl" },
+  { image: "assets/team-img-3.jpg", name: "Anya Bruwer" },
+];
+const TESTIMONIALS = [
+  { image: "assets/shawn-img.jpg", name: "Shawn Smit", quote: "She managed to take me from unbearable pain in my right knee when running to being able to take on a 100km run.", story: "Shawn struggled with ankle mobility for years after ligament surgery, and the extra strain eventually led to severe knee pain whenever he ran. Through a personalised rehabilitation and strength programme, he gradually rebuilt his movement, trained pain-free, and went on to achieve an incredible milestone, completing a 100km ultramarathon." },
+  { image: "assets/maggie-img.jpg", name: "Maggie Grobler", quote: "Their holistic approach to movement, strength, and rehabilitation has been life-changing for me.", story: "For years, Maggie struggled with chronic back pain following a slipped disc, and by her forties, the pain had become part of her daily life. She believed surgery might be her only option. Through a personalised rehabilitation programme, she discovered the importance of building strength from the ground up, improving everything from ankle stability, movement, and overall function. Today, she's moving with greater confidence, experiencing significantly less pain, and has a whole new outlook on what's possible." },
+  { image: "assets/albert-img.jpg", name: "Albert Geiger", quote: "Zani has been an immeasurable support as I navigate a long road to recovery.", story: "Following reconstructive surgery and cancer treatment, Albert faced a long and challenging road to recovery. Through a personalised rehabilitation programme, he gradually regained strength, mobility, and confidence. With ongoing support, tailored exercises, and expert guidance every step of the way, he's making steady progress and continuing to move forward in his recovery." },
+  { image: "assets/bettina-img.jpg", name: "Bettina Meyer", quote: "I went from not being able to bend, to being strong enough to run a half marathon.", story: "After suffering a severe Grade 3 ankle tear, Bettina struggled with pain, mobility, and returning to the activities she loved. Through a personalised rehabilitation and strengthening programme, she not only rebuilt her ankle but also addressed underlying muscle imbalances to improve her overall movement. Today, she's stronger, more confident, and has achieved an incredible milestone, completing a half marathon." },
+].map((t) => ({ ...t, imageAlt: t.name + ", patient at Esti Smit Biokinetics, Paarl" }));
+const FAQS = [
+  { q: "What is Biokinetics?", a: "Biokinetics is about helping your body move better, feel stronger and function the way it should. Through personalised exercise and movement therapy, we look beyond where it hurts to understand why it hurts. Instead of simply managing symptoms, we focus on finding the root cause, restoring proper muscle function and building long-term strength, so you can get back to doing what you love, with confidence." },
+  { q: "Do I need a referral to see a Biokineticist?", a: "No. You can contact us directly to book your first evaluation. If you’ve been referred by a doctor, physio or specialist, you’re also welcome to bring along any reports, scans or relevant information." },
+  { q: "Do you claim from medical aid?", a: "Yes, we can claim directly from your medical aid if you would like us to. We are registered healthcare providers and Biokinetics may be covered by your medical aid, depending on your scheme, plan and available benefits. We recommend confirming your specific benefits with your medical aid." },
+  { q: "What if I’ve already tried physio or other treatment and I’m still in pain?", a: "You’re definitely not alone. Sometimes the painful area isn’t the only part of the problem. We assess your movement, strength, mobility and muscle function to identify weaknesses or compensations that may be contributing to your symptoms — and then use exercise to address them." },
+  { q: "How many sessions will I need?", a: "Everyone is different. It depends on your condition, how long you’ve had it, your current strength and function, and what you want to get back to doing. After your first evaluation, we’ll explain what we found and recommend a plan specifically for you." },
+  { q: "Do you help with rehabilitation after surgery?", a: "Yes. Post-operative rehabilitation is an important part of Biokinetics. We help rebuild strength, mobility and function following procedures such as knee and hip replacements, ACL reconstruction, shoulder surgery and other orthopaedic procedures. Biokinetics is particularly associated with the final phase of rehabilitation and return to normal activity or sport." },
+  { q: "Do I have to be injured to see a Biokineticist?", a: "Not at all! Biokinetics isn't only for pain and injuries. We also work with people who want to get stronger, improve fitness, manage chronic conditions, improve balance and mobility, exercise safely as they age, or improve sports performance." },
+  { q: "What happens at my first evaluation?", a: "We start by talking about what’s bothering you and what you want to get back to doing. We then assess relevant areas such as your movement, strength, mobility and muscle function. From there, we explain what we found and create an individualised exercise and rehabilitation plan." },
+  { q: "I'm not very fit. Can I still come?", a: "Absolutely. You don't need to be fit before seeing a Biokineticist. Your programme starts at your current ability level and progresses as you become stronger and more confident." },
+  { q: "Can you help me if I don't know exactly what's causing my pain?", a: "Yes — that's what the first evaluation is for. You don't need to arrive with a diagnosis. We assess how you move and function and determine the most appropriate way forward. If we feel your symptoms need to be assessed by another healthcare professional first, we'll tell you." },
+  { q: "Can you help if I've had pain for years?", a: "Yes. Many of the people we help have been living with pain for years and assumed it was just something to manage. Finding the actual root cause often changes that." },
+];
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness", "Physiotherapy"],
+      "@id": SITE + "#practice",
+      name: "Esti Smit Biokinetics",
+      alternateName: "Esti Smit Biokineticist",
+      description: "HPCSA-registered biokinetics practice in Paarl offering personalised exercise therapy for pain, injury, post-operative rehabilitation, chronic conditions and healthy ageing.",
+      url: SITE,
+      logo: SITE + "assets/logo-img.png",
+      image: SITE + "og-image.jpg",
+      telephone: "+27686104880",
+      email: "esti.healthplus@gmail.com",
+      priceRange: "Medical aid accepted",
+      address: { "@type": "PostalAddress", streetAddress: "Winelands Medical Centre, 1D New Eskdale Street, De Zoete Inval", addressLocality: "Paarl", addressRegion: "Western Cape", postalCode: "7646", addressCountry: "ZA" },
+      areaServed: [{ "@type": "City", name: "Paarl" }, { "@type": "AdministrativeArea", name: "Cape Winelands" }],
+      openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "16:00" }],
+      medicalSpecialty: "Physiotherapy",
+      knowsAbout: ["Biokinetics","Exercise therapy","Back pain","Sports injury rehabilitation","Post-operative rehabilitation","Chronic disease management","Fall prevention"],
+      employee: [
+        { "@type": "Person", name: "Esti Smit", jobTitle: "Biokineticist", alumniOf: "University of the Western Cape", memberOf: [{ "@type": "Organization", name: "Health Professions Council of South Africa" }, { "@type": "Organization", name: "Biokinetics Association of South Africa" }] },
+        { "@type": "Person", name: "Zani Van Zyl", jobTitle: "Biokineticist" },
+        { "@type": "Person", name: "Anya Bruwer", jobTitle: "Biokineticist" },
+      ],
+      potentialAction: { "@type": "ReserveAction", target: BOOK, name: "Book Your Assessment" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Biokinetics programmes",
+        itemListElement: PROGRAMMES.map((p) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: p.name, description: p.blurb, serviceType: "Biokinetics", areaServed: "Paarl", provider: { "@id": SITE + "#practice" } } })),
+      },
+    },
+    { "@type": "WebSite", "@id": SITE + "#website", url: SITE, name: "Esti Smit Biokinetics", inLanguage: "en-ZA", publisher: { "@id": SITE + "#practice" } },
+    { "@type": "WebPage", "@id": SITE + "#webpage", url: SITE, name: "Biokineticist in Paarl | Esti Smit Biokinetics", isPartOf: { "@id": SITE + "#website" }, about: { "@id": SITE + "#practice" }, inLanguage: "en-ZA" },
+    { "@type": "FAQPage", "@id": SITE + "#faq", mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  ],
+};
+
+class Component extends DCLogic {
+  state = { narrow: false, menuOpen: false, panelOpen: true, checks: [] };
+
+  componentDidMount() {
+    document.documentElement.lang = "en-ZA";
+    if (location.hash) { const jump = () => { const el = document.getElementById(location.hash.slice(1)); if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 84); }; [0, 150, 500, 1200].forEach(d => setTimeout(jump, d)); }
+    this.onResize = () => this.setState({ narrow: window.innerWidth < 1080, wide: window.innerWidth >= 1360, figs: window.innerWidth >= 1000 });
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+    this.mountFitness();
+    let s = document.getElementById("esb-jsonld");
+    if (!s) { s = document.createElement("script"); s.type = "application/ld+json"; s.id = "esb-jsonld"; document.head.appendChild(s); }
+    s.textContent = JSON.stringify(SCHEMA);
+    this.timers = [setTimeout(() => this.scan(), 1200), setTimeout(() => this.scan(), 3500)];
+  }
+  mountFitness() {
+    const canvas = document.getElementById("esb-fitness-bg");
+    const host = document.getElementById("conditions");
+    if (canvas && host && window.ESBFitnessBg && !this.unmountFitness) { this.unmountFitness = window.ESBFitnessBg.mount(canvas, host); return; }
+    if (!this.unmountFitness && (this.fitTries = (this.fitTries || 0) + 1) < 60) this.fitTimer = setTimeout(() => this.mountFitness(), 150);
+  }
+  componentDidUpdate() { if (!this.unmountFitness && !this.fitTimer) this.mountFitness(); }
+  componentWillUnmount() {
+    clearTimeout(this.fitTimer); if (this.unmountFitness) this.unmountFitness();
+    window.removeEventListener("resize", this.onResize);
+    (this.timers || []).forEach(clearTimeout);
+  }
+
+  scan() {
+    const q = (sel) => document.querySelector(sel);
+    const ok = "#3a9a5b", warn = "var(--orange)", bad = "#c0392b";
+    const title = document.title || "";
+    const desc = (q('meta[name="description"]') || {}).content || "";
+    const canon = (q('link[rel="canonical"]') || {}).href || "";
+    const h1 = document.querySelectorAll("main h1").length;
+    const h2 = document.querySelectorAll("main h2").length, h3 = document.querySelectorAll("main h3").length;
+    const imgs = [...document.querySelectorAll("img")].filter((i) => !i.closest("aside"));
+    const withAlt = imgs.filter((i) => (i.getAttribute("alt") || "").trim().length > 0).length;
+    let types = [];
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((el) => {
+      try { const j = JSON.parse(el.textContent); (j["@graph"] || [j]).forEach((n) => types = types.concat(n["@type"])); } catch (e) {}
+    });
+    const og = document.querySelectorAll('meta[property^="og:"]').length;
+    const tel = document.querySelectorAll('a[href^="tel:"]').length;
+    const mail = document.querySelectorAll('a[href^="mailto:"]').length;
+    const hashNav = NAV.filter((n) => n.href.startsWith("#"));
+    const anchors = hashNav.filter((n) => document.getElementById(n.href.slice(1))).length;
+    const range = (n, a, b) => n >= a && n <= b;
+    const checks = [
+      { label: "Title tag", value: title ? `${title} (${title.length} chars)` : "Missing", pass: range(title.length, 30, 60) },
+      { label: "Meta description", value: desc ? `${desc.length} chars` : "Missing", pass: range(desc.length, 120, 160) },
+      { label: "Canonical URL", value: canon || "Missing", pass: !!canon },
+      { label: "Single H1 with location keyword", value: `${h1} H1 · ${h2} H2 · ${h3} H3`, pass: h1 === 1 },
+      { label: "Image alt text", value: `${withAlt} of ${imgs.length} images described`, pass: imgs.length > 0 && withAlt === imgs.length },
+      { label: "Structured data (JSON-LD)", value: types.length ? types.join(", ") : "None", pass: types.includes("FAQPage") && types.includes("MedicalBusiness") },
+      { label: "Social share tags", value: `${og} Open Graph tags + Twitter card`, pass: og >= 6 },
+      { label: "Click-to-call & email links", value: `${tel} tel: · ${mail} mailto:`, pass: tel > 0 && mail > 0 },
+      { label: "Language", value: document.documentElement.lang || "Not set", pass: !!document.documentElement.lang },
+      { label: "Crawlable nav anchors", value: `${anchors} of ${hashNav.length} targets found`, pass: anchors === hashNav.length },
+    ].map((c) => ({ ...c, color: c.pass ? ok : (c.value === "Missing" || c.value === "None" ? bad : warn) }));
+    this.setState({ checks });
+  }
+
+  renderVals() {
+    const { narrow, menuOpen, panelOpen, checks } = this.state;
+    return {
+      marqueeSets: Array.from({ length: 12 }, (_, i) => ({ hidden: i === 0 ? "false" : "true" })),
+      rootSteps: ROOT_STEPS.map((s, i) => ({ ...s, chipDelay: String(350 + i * 220) })),
+      regions: REGIONS.map((r, i) => {
+        const open = !!(this.state.openRegions || {})[i];
+        return {
+          ...r, panelId: "region-" + i, expanded: open ? "true" : "false",
+          display: open ? "flex" : "none", chevron: open ? "rotate(180deg)" : "none",
+          linkLabel: open ? "Hide " + r.key + " conditions" : "See all " + r.key + " conditions",
+          listLabel: r.title + " we treat",
+          toggle: () => this.setState((s) => ({ openRegions: { ...(s.openRegions || {}), [i]: !(s.openRegions || {})[i] } })),
+        };
+      }),
+      nav: NAV, programmes: PROGRAMMES, steps: STEPS, whyUs: WHY, included: INCLUDED, team: TEAM, testimonials: TESTIMONIALS, faqs: FAQS,
+      desktopNav: narrow ? "none" : "flex",
+      bookLabel: this.state.wide ? "Book Your Assessment" : "Book Now",
+      mobileToggle: narrow ? "flex" : "none",
+      mobileNav: narrow && menuOpen ? "flex" : "none",
+      menuOpen, menuIcon: menuOpen ? "x" : "menu",
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      showPanel: this.props.showSeoPanel ?? true,
+      panelOpen, panelToggleLabel: panelOpen ? "Hide" : "Show",
+      togglePanel: () => this.setState((s) => ({ panelOpen: !s.panelOpen })),
+      rescan: () => this.scan(),
+      checks, passCount: checks.filter((c) => c.pass).length, totalCount: checks.length || 10,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Can Biokinetics Help Me? | Biokineticist in Paarl</title>
+  <meta name="description" content="Answer a few quick questions to find out if biokinetics can help with your pain, injury, surgery recovery or health goals. Biokineticists in Paarl.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.estismitbio.com/can-biokinetics-help-me">
+  <meta name="theme-color" content="#e58749">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:site_name" content="Esti Smit Biokinetics">
+  <meta property="og:title" content="Can Biokinetics Help Me?">
+  <meta property="og:description" content="Answer a few quick questions and see how a biokineticist may be able to help you.">
+  <meta property="og:url" content="https://www.estismitbio.com/can-biokinetics-help-me">
+  <meta property="og:image" content="https://www.estismitbio.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Can Biokinetics Help Me?">
+  <meta name="twitter:description" content="Answer a few quick questions and see how a biokineticist may be able to help you.">
+  <meta name="twitter:image" content="https://www.estismitbio.com/og-image.jpg">
+  <link rel="preload" as="image" href="assets/help-hero.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/shape.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/base.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/styles.css">
+  <script src="analytics.js"></script>
+  <script src="reveal.js"></script>
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.js"></script>
+  <script src="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; font-family: var(--font-body); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+    a { color: var(--orange-dark); }
+    a:hover { color: var(--orange); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--charcoal); background: #fff;">
+
+  <header style="position: sticky; top: 0; z-index: 50; background: var(--header-bg); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 24px;">
+      <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="display: flex;">
+        <img src="assets/logo-img.png" alt="Esti Smit Biokineticist — Move Better | Feel Stronger | Live Well" width="133" height="48" style="height: 52px; width: auto; display: block;">
+      </a>
+      <nav aria-label="Main" style="display: {{ desktopNav }}; align-items: center; gap: 16px; white-space: nowrap;">
+        <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.NavLink" href="{{ l.href }}" aria-current="{{ l.current }}" style="{{ l.style }}" hint-size="auto,28px">{{ l.label }}</x-import>
+        </sc-for>
+      </nav>
+      <div style="display: {{ desktopNav }}; align-items: center; gap: 12px; white-space: nowrap; flex-shrink: 0;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="secondary" size="sm" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="130px,42px">WhatsApp</x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" size="sm" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="200px,42px">{{ bookLabel }}</x-import>
+      </div>
+      <button type="button" aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" aria-controls="mobile-nav" onClick="{{ toggleMenu }}" style="display: {{ mobileToggle }}; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--charcoal); cursor: pointer;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="{{ menuIcon }}" size="{{ 24 }}" hint-size="24px,24px"></x-import>
+      </button>
+    </div>
+    <nav id="mobile-nav" aria-label="Mobile" style="display: {{ mobileNav }}; flex-direction: column; gap: 16px; padding: 16px 24px 24px; border-top: 1px solid var(--line); background: #fff;">
+      <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="color: var(--ink); font-weight: 600; font-size: 16px; padding: 10px 2px; text-decoration: none;">{{ l.label }}</a>
+      </sc-for>
+      <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" full-width="{{ true }}" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="100%,50px">Book Your Assessment</x-import>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoSection" image="assets/help-hero.jpg" image-alt="Biokineticist at Esti Smit Biokinetics in Paarl guiding a client through a hamstring and hip exercise" scrim="hero" hint-size="100%,520px">
+      <div style="max-width: 896px; margin: 0 auto; padding: clamp(96px, 11vw, 144px) 24px; text-align: center;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Eyebrow" tone="warm" size="base" on-photo="{{ true }}" hint-size="100%,24px">Find out how we can help you</x-import>
+        <h1 data-reveal="" data-reveal-delay="120" style="font-family: var(--font-heading); font-size: var(--text-h1); font-weight: 500; line-height: 1.08; letter-spacing: -0.01em; color: #fff; margin: 20px 0 24px; text-wrap: balance; text-shadow: var(--text-shadow-on-photo);">Is Biokinetics right for you?</h1>
+        <p data-reveal="" data-reveal-delay="240" style="font-size: var(--text-lead); font-weight: 600; line-height: var(--leading-body); color: #fff; max-width: 672px; margin: 0 auto; text-wrap: pretty; text-shadow: var(--text-shadow-on-photo);">If pain, an injury or a health condition is stopping you from moving the way you want to, biokinetics may be the next step. Answer a few quick questions below to find out.</p>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="assessment" tone="white" width="{{ 768 }}" padding-y="{{ 96 }}" hint-size="100%,760px">
+      <div data-reveal="" data-reveal-delay="0" data-reveal-type="zoom" style="border: 1px solid var(--line); border-radius: var(--radius-card-lg); overflow: hidden; background: #fff; box-shadow: var(--shadow-card-hover);">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line); background: #fff;">
+          <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+            <img src="icons/favicon-192.png" alt="Esti Smit and the biokinetics team" width="44" height="44" style="width: 44px; height: 44px; border-radius: 50%; display: block; flex-shrink: 0;">
+            <div style="display: flex; flex-direction: column; min-width: 0;">
+              <span style="font-family: var(--font-heading); font-size: 18px; font-weight: 500; color: var(--charcoal);">Esti Smit Biokinetics</span>
+              <span style="font-size: 12px; font-weight: 600; color: var(--muted);">Quick check · about 1 minute</span>
+            </div>
+          </div>
+          <button type="button" onClick="{{ restart }}" style="display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--grey-bg); border-radius: 999px; padding: 8px 14px; font: 700 13px var(--font-body); color: var(--ink); cursor: pointer; white-space: nowrap;">
+            <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="rotate-ccw" size="{{ 14 }}" stroke-width="{{ 2 }}" hint-size="14px,14px"></x-import>
+            Start again
+          </button>
+        </div>
+
+        <div id="esb-chat-log" role="log" aria-live="polite" aria-label="Can Biokinetics Help Me? assessment" style="height: min(640px, 72vh); overflow-y: auto; padding: 28px 20px; display: flex; flex-direction: column; gap: 14px; background: #fff;">
+          <sc-for list="{{ messages }}" as="m" hint-placeholder-count="2">
+            <sc-if value="{{ m.isBot }}" hint-placeholder-val="{{ true }}">
+              <div style="display: flex; gap: 10px; align-items: flex-end; max-width: 88%;">
+                <img src="icons/favicon-32.png" alt="" width="32" height="32" style="width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0; display: block;">
+                <div style="background: var(--grey-bg); border-radius: 18px 18px 18px 6px; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px;">
+                  <sc-for list="{{ m.paras }}" as="p" hint-placeholder-count="1">
+                    <p style="margin: 0; font-size: 16px; font-weight: 600; line-height: 1.55; color: var(--charcoal); text-wrap: pretty;">{{ p }}</p>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ m.isUser }}" hint-placeholder-val="{{ false }}">
+              <div style="align-self: flex-end; max-width: 80%; background: var(--blue); color: #fff; border-radius: 18px 18px 6px 18px; padding: 12px 18px; font-size: 15px; font-weight: 700; line-height: 1.45;">{{ m.text }}</div>
+            </sc-if>
+          </sc-for>
+
+          <sc-if value="{{ typing }}" hint-placeholder-val="{{ false }}">
+            <div aria-label="Typing" style="display: flex; gap: 10px; align-items: flex-end;">
+              <img src="icons/favicon-32.png" alt="" width="32" height="32" style="width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0; display: block;">
+              <div style="background: var(--grey-bg); border-radius: 18px 18px 18px 6px; padding: 14px 18px; display: flex; gap: 5px;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--muted); opacity: .45;"></span>
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--muted); opacity: .65;"></span>
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--muted); opacity: .85;"></span>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ hasOptions }}" hint-placeholder-val="{{ true }}">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; padding-left: 42px; margin-top: 4px;">
+              <sc-for list="{{ options }}" as="o" hint-placeholder-count="2">
+                <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="secondary" size="sm" dc-props="{{ o.btn }}" hint-size="auto,42px">{{ o.l }}</x-import>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-left: 42px; margin-top: 6px;">
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="260px,52px">Book My First Evaluation</x-import>
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="whatsapp" href="{{ waHref }}" icon-right="arrow-right" hint-size="260px,52px">I'd Rather WhatsApp First</x-import>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </x-import>
+
+  </main>
+
+  <footer style="background: #fff; color: var(--charcoal); border-top: 1px solid var(--line); padding: 80px 0 40px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="align-self: flex-start; display: inline-flex;"><img src="assets/logo-img.png" alt="Esti Smit Biokineticist" width="133" height="48" style="height: 52px; width: auto; display: block;"></a>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; line-height: 1.6; color: var(--muted);">HPCSA-registered biokineticists helping you move beyond pain, recover stronger and stay active.</p>
+        <address style="font-style: normal;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Winelands+Medical+Centre+1D+New+Eskdale+Street+Paarl" target="_blank" rel="noopener" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; align-items: flex-start; line-height: 1.6;"><span style="display: inline-flex; padding-top: 3px;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="map-pin" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import></span><span>Winelands Medical Centre<br>1D New Eskdale Street, De Zoete Inval<br>Paarl 7646</span></a></address>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Menu</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="Homepage.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Home</a></li>
+          <li><a href="Can%20Biokinetics%20Help%20Me.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Can Biokinetics Help Me?</a></li>
+          <li><a href="Homepage.dc.html#conditions" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">What We Treat</a></li>
+          <li><a href="Medical%20Aid.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Medical Aid</a></li>
+          <li><a href="Homepage.dc.html#stories" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Testimonials</a></li>
+          <li><a href="Homepage.dc.html#faq" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">FAQ</a></li>
+          <li><a href="Blog.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Blog</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Contact</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="phone" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>068 610 4880</a></li>
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="message-circle" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>WhatsApp us</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="mail" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>esti.healthplus@gmail.com</a></li>
+          <li><a href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="calendar" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>Book Your Assessment</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Hours</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; font-size: 14px; font-weight: 600; color: var(--muted);">
+          <dt style="color: var(--charcoal);">Mon – Fri</dt><dd style="margin: 0;">08:00 – 16h00</dd>
+          <dt style="color: var(--charcoal);">Saturdays</dt><dd style="margin: 0;">Closed</dd>
+          <dt style="color: var(--charcoal);">Sundays</dt><dd style="margin: 0;">Closed</dd>
+        </dl>
+      </div>
+    </div>
+    <div style="max-width: 1280px; margin: 56px auto 0; padding: 24px 24px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted);">
+      <span>© 2026 Esti Smit Biokinetics. Registered Biokineticist, HPCSA. All rights reserved.</span>
+      <span>Biokineticist in Paarl, Western Cape</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const SITE = "https://www.estismitbio.com/";
+const URL = SITE + "can-biokinetics-help-me";
+const HOME = "Homepage.dc.html";
+const NAV = [
+  { label: "Home", href: HOME },
+  { label: "What We Treat", href: HOME + "#conditions" },
+  { label: "FAQ", href: HOME + "#faq" },
+  { label: "Medical Aid", href: "Medical%20Aid.dc.html" },
+  { label: "Can Biokinetics Help Me?", href: "Can%20Biokinetics%20Help%20Me.dc.html", current: "page" },
+  { label: "Blog", href: "Blog.dc.html" },
+].map((l) => ({ ...l, current: l.current || "false", style: l.current ? { color: "var(--orange-dark)" } : {} }));
+
+const BODY_AREAS = ["Neck / shoulders","Back / lower back","Hip / groin","Knee","Ankle / foot","Elbow / wrist / hand","Multiple areas"];
+const opts = (labels, next) => labels.map((l) => ({ l, next }));
+
+const FLOW = {
+  start: {
+    bot: [
+      ["Hi! Wondering whether Biokinetics is right for you?", "Answer a few quick questions and we'll show you exactly how a Biokineticist may be able to help."],
+      ["Do you currently experience pain, discomfort or an injury that affects your movement?"],
+    ],
+    options: [{ l: "Yes, I have pain / an injury", next: "area" }, { l: "No, I'm not in pain", next: "goals" }],
+  },
+  area: {
+    bot: [["Where are you experiencing the problem?"]],
+    options: [
+      ...opts(BODY_AREAS, "duration"),
+      { l: "Post-operative / recovering from surgery", next: "postop" },
+      { l: "Neurological condition / disability", next: "neuro" },
+      { l: "Other", next: "duration" },
+    ],
+  },
+  duration: { bot: [["How long has this been bothering you?"]], options: opts(["Less than 2 weeks","2–6 weeks","More than 6 weeks","It keeps coming back"], "affects") },
+  affects: { bot: [["Does it affect any of these?"]], options: opts(["Exercise / sport","Work / sitting","Walking / stairs","Sleep / everyday activities","More than one of these"], "painResult") },
+  painResult: { result: true, bot: [
+    ["Yes — this is exactly where Biokinetics may help."],
+    ["A Biokineticist doesn't only look at where you experience pain. We assess how your body moves, identify weakness, muscle imbalances and movement limitations that may be contributing to the problem, and then use individualised exercise rehabilitation to help restore function."],
+    ["Your first step would usually be a First Evaluation, where we assess your movement, strength and function before developing your rehabilitation plan."],
+  ] },
+  postop: { bot: [["What stage are you currently in?"]], options: opts(["Surgery is still coming up","Recently had surgery","Finished physio but still need rehabilitation","Long-term weakness / limitations after surgery"], "postopResult") },
+  postopResult: { result: true, bot: [
+    ["Biokinetics can definitely form part of your recovery."],
+    ["We specialise in the exercise rehabilitation phase of recovery — rebuilding your strength, mobility, stability, confidence and physical function so you can return to everyday life, work or sport safely."],
+    ["We'll first evaluate where you are in your recovery and build your programme from there."],
+  ] },
+  neuro: { bot: [["What would you most like help with?"]], options: opts(["Strength","Balance & stability","Walking / mobility","Independence with daily activities","General fitness","Preventing further physical decline"], "neuroResult") },
+  neuroResult: { result: true, bot: [
+    ["Yes — Biokinetics may be able to help."],
+    ["Exercise can be adapted to your individual abilities. A Biokineticist can work on strength, balance, mobility, cardiovascular fitness and functional independence while taking your specific condition and limitations into account."],
+    ["We'd start with an individual assessment to determine exactly what you can do and where we can help you improve."],
+  ] },
+  goals: {
+    bot: [["Great! You don't need to be injured or in pain to benefit from Biokinetics."], ["What would you most like help with?"]],
+    options: [
+      { l: "Sports performance", next: "sports" },
+      { l: "Getting stronger", next: "starting" },
+      { l: "Weight management", next: "weight" },
+      { l: "Chronic disease / improving my health", next: "chronic" },
+      { l: "Posture & movement", next: "posture" },
+      { l: "Healthy ageing / staying independent", next: "ageing" },
+      { l: "Pre- or post-natal exercise", next: "end" },
+      { l: "Starting exercise safely", next: "starting" },
+      { l: "Improving fitness & endurance", next: "end" },
+      { l: "Osteoporosis / bone health", next: "end" },
+      { l: "Balance & fall prevention", next: "ageing" },
+      { l: "Sedentary lifestyle / desk work", next: "posture" },
+      { l: "General strength & conditioning", next: "starting" },
+      { l: "I'm not sure — I just want to be healthier", next: "end" },
+    ],
+  },
+  sports: { bot: [["What would you most like to improve?"]], options: opts(["Strength / Power","Speed / Agility","Endurance","Movement efficiency","Injury prevention"], "sportsResult") },
+  sportsResult: { result: true, bot: [
+    ["Absolutely. Biokinetics isn't only rehabilitation."],
+    ["We can assess your strength and movement, identify areas that may be limiting your performance, and build a programme around the demands of your sport."],
+    ["Whether you're a competitive athlete or simply want to perform better, we can help you become stronger, more efficient and more resilient."],
+  ] },
+  weight: { bot: [["What best describes your goal?"]], options: opts(["Lose body fat","Build muscle","Improve fitness","Improve overall health","A combination"], "weightResult") },
+  weightResult: { result: true, bot: [
+    ["Yes — Biokinetics can be an important part of your journey."],
+    ["Instead of simply telling you to \"exercise more\", we can assess your current fitness and physical ability and prescribe exercise specifically for you."],
+    ["The focus is on building strength, improving fitness, increasing physical capacity and creating an exercise routine you can maintain long term."],
+  ] },
+  chronic: { bot: [["Are you currently managing a diagnosed health condition?"]], options: opts(["High blood pressure","Diabetes / insulin resistance","High cholesterol","Heart condition","Obesity","Multiple conditions","Other"], "chronicResult") },
+  chronicResult: { result: true, bot: [
+    ["This is an important area of Biokinetics."],
+    ["Biokineticists use scientifically prescribed exercise to help manage many chronic conditions and improve physical capacity, strength and cardiovascular health."],
+    ["Your programme would be based on your health history, current ability and individual needs."],
+  ] },
+  ageing: { bot: [["What is most important to you?"]], options: opts(["Staying strong","Balance / preventing falls","Walking better","Remaining independent","Getting fit again","All of the above"], "ageingResult") },
+  ageingResult: { result: true, bot: [
+    ["Yes — and you don't need to already be struggling before you start."],
+    ["Biokinetics can help maintain or improve strength, balance, mobility, fitness and independence as you age."],
+    ["We'll meet you at your current ability level and progress from there."],
+  ] },
+  posture: { bot: [["What would you most like to improve?"]], options: opts(["My posture","Weak core","Stiffness","Movement / mobility","Prevent future problems"], "postureResult") },
+  postureResult: { result: true, bot: [
+    ["Yes."],
+    ["Rather than simply telling you to \"sit up straight\", we can assess how you move, where you're weak or restricted, and then strengthen the areas that need it."],
+    ["The aim is to help your body become stronger and more capable, not simply force it into a particular posture."],
+  ] },
+  starting: { bot: [["Which sounds most like you?"]], options: opts(["I haven't exercised in years","I'm a complete beginner","I exercise but don't know what I should be doing","I want professional guidance"], "startingResult") },
+  startingResult: { result: true, bot: [
+    ["You're actually an ideal candidate for Biokinetics."],
+    ["You don't need to be fit before seeing us."],
+    ["We'll assess where you're starting, identify your strengths and weaknesses and help you exercise at the right level for your body — then progressively build from there."],
+  ] },
+  end: { result: true, bot: [] },
+};
+
+const ENDING = [
+  ["It sounds like Biokinetics could be a great fit for you.", "Based on your answers, we'd recommend starting with a First Evaluation."],
+  ["During your evaluation we'll look at your movement, strength, mobility and physical function to understand exactly where you're starting.", "From there, we'll explain what we found and recommend the best way forward for you."],
+  ["No guessing. No generic exercise programme. A plan based on your body and your goals."],
+];
+
+const AREA = { "Neck / shoulders": "neck and shoulder pain", "Back / lower back": "lower back pain", "Hip / groin": "hip and groin pain", "Knee": "knee pain", "Ankle / foot": "ankle and foot pain", "Elbow / wrist / hand": "elbow, wrist or hand pain", "Multiple areas": "pain in multiple areas", "Other": "pain" };
+const DUR = { "Less than 2 weeks": ["recent ", ""], "2–6 weeks": ["", " that started 2–6 weeks ago"], "More than 6 weeks": ["ongoing ", ""], "It keeps coming back": ["recurring ", ""] };
+const AFF = { "Exercise / sport": "when exercising", "Work / sitting": "at work and when sitting", "Walking / stairs": "when walking or on stairs", "Sleep / everyday activities": "with sleep and everyday activities", "More than one of these": "in more than one part of my day" };
+const POSTOP = { "Surgery is still coming up": "I have surgery coming up", "Recently had surgery": "I recently had surgery", "Finished physio but still need rehabilitation": "I've finished physio after surgery but still need rehabilitation", "Long-term weakness / limitations after surgery": "I have long-term weakness and limitations after surgery" };
+
+function summary(a) {
+  if (a.area === "Post-operative / recovering from surgery") return POSTOP[a.postop] || "I'm recovering from surgery";
+  if (a.area === "Neurological condition / disability") return "I have a neurological condition / disability and would like help with " + (a.neuro || "").toLowerCase();
+  if (a.area) {
+    const d = DUR[a.duration] || ["", ""];
+    let s = "I have " + d[0] + AREA[a.area] + d[1];
+    if (a.affects) s += " that affects me " + AFF[a.affects];
+    return s;
+  }
+  if (a.goals) {
+    const detail = a.sports || a.weight || a.chronic || a.ageing || a.posture || a.starting;
+    return "I'd like help with " + a.goals.toLowerCase() + (detail ? " (" + detail.toLowerCase() + ")" : "");
+  }
+  return "I'd like to find out more";
+}
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebPage", "@id": URL + "#webpage", url: URL, name: "Can Biokinetics Help Me? | Biokineticist in Paarl", description: "Answer a few quick questions to find out if biokinetics can help with your pain, injury, surgery recovery or health goals.", inLanguage: "en-ZA", isPartOf: { "@id": SITE + "#website" }, about: { "@id": SITE + "#practice" }, breadcrumb: { "@id": URL + "#breadcrumb" } },
+    { "@type": "BreadcrumbList", "@id": URL + "#breadcrumb", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Can Biokinetics Help Me?", item: URL },
+    ] },
+  ],
+};
+
+class Component extends DCLogic {
+  state = { narrow: false, menuOpen: false, messages: [], options: [], typing: false, done: false, answers: {}, node: "start" };
+  run = 0;
+
+  componentDidMount() {
+    document.documentElement.lang = "en-ZA";
+    this.onResize = () => this.setState({ narrow: window.innerWidth < 1080, wide: window.innerWidth >= 1360 });
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+    let s = document.getElementById("esb-jsonld");
+    if (!s) { s = document.createElement("script"); s.type = "application/ld+json"; s.id = "esb-jsonld"; document.head.appendChild(s); }
+    s.textContent = JSON.stringify(SCHEMA);
+    this.go("start", true);
+    this.attachObserver();
+  }
+  componentWillUnmount() { window.removeEventListener("resize", this.onResize); this.run++; clearTimeout(this.timer); clearTimeout(this.st); if (this.mo) this.mo.disconnect(); }
+  scrollChat() {
+    const el = document.getElementById("esb-chat-log");
+    if (el) el.scrollTop = el.scrollHeight;
+  }
+  attachObserver() {
+    const el = document.getElementById("esb-chat-log");
+    if (!el || this.mo) return !!el;
+    this.mo = new MutationObserver(() => { cancelAnimationFrame(this.raf); this.raf = requestAnimationFrame(() => this.scrollChat()); });
+    this.mo.observe(el, { childList: true, subtree: true });
+    return true;
+  }
+  componentDidUpdate() {
+    if (!this.mo) this.attachObserver();
+    clearTimeout(this.st);
+    this.st = setTimeout(() => this.scrollChat(), 120);
+  }
+
+  play(list, runId, after, instant) {
+    if (runId !== this.run) return;
+    if (!list.length) return after();
+    if (instant) {
+      this.setState((s) => ({ messages: [...s.messages, ...list.map((paras) => ({ from: "bot", paras }))] }), after);
+      return;
+    }
+    const item = list[0];
+    const paras = Array.isArray(item) ? item : item.paras;
+    const wait = Array.isArray(item) ? 650 : item.delay;
+    const typeFor = Math.min(wait, 1200);
+    const send = () => {
+      if (runId !== this.run) return;
+      this.setState({ typing: true });
+      this.timer = setTimeout(() => {
+        if (runId !== this.run) return;
+        this.setState((s) => ({ typing: false, messages: [...s.messages, { from: "bot", paras }] }), () => this.play(list.slice(1), runId, after));
+      }, typeFor);
+    };
+    if (wait > typeFor) this.timer = setTimeout(send, wait - typeFor); else send();
+  }
+
+  go(id, instant) {
+    const node = FLOW[id];
+    const runId = ++this.run;
+    const helpParas = node.bot.flat().filter((p) => !p.startsWith("Your first step would usually be"));
+    const list = node.result
+      ? [...(helpParas.length ? [{ paras: helpParas, delay: 650 }] : []), { paras: ENDING.flat(), delay: helpParas.length ? 6000 : 650 }]
+      : node.bot;
+    this.setState({ node: id, options: [] });
+    this.play(list, runId, () => this.setState(node.result ? { done: true, options: [] } : { options: node.options }), instant);
+  }
+
+  choose(opt) {
+    const id = this.state.node;
+    if (window.gtag) window.gtag("event", "assessment_answer", { question: id, answer: opt.l });
+    if (FLOW[opt.next] && FLOW[opt.next].result && window.gtag) window.gtag("event", "assessment_complete", { result: opt.next });
+    this.setState((s) => ({ answers: { ...s.answers, [id]: opt.l }, options: [], messages: [...s.messages, { from: "user", text: opt.l }] }), () => this.go(opt.next));
+  }
+
+  restart() {
+    this.run++; clearTimeout(this.timer);
+    this.setState({ messages: [], options: [], typing: false, done: false, answers: {}, node: "start" }, () => this.go("start", true));
+  }
+
+  renderVals() {
+    const { narrow, menuOpen, messages, options, typing, done, answers } = this.state;
+    const wa = "Hi! I completed the \"Can Biokinetics Help Me?\" assessment on your website. " + summary(answers) + " and I'd like to find out about booking an evaluation.";
+    return {
+      nav: NAV,
+      desktopNav: narrow ? "none" : "flex",
+      bookLabel: this.state.wide ? "Book Your Assessment" : "Book Now",
+      mobileToggle: narrow ? "flex" : "none",
+      mobileNav: narrow && menuOpen ? "flex" : "none",
+      menuOpen, menuIcon: menuOpen ? "x" : "menu",
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      messages: messages.map((m) => ({ ...m, isBot: m.from === "bot", isUser: m.from === "user" })),
+      options: options.map((o) => ({ ...o, btn: { onClick: () => this.choose(o), style: { whiteSpace: "normal", textAlign: "left", lineHeight: 1.35 } } })),
+      hasOptions: options.length > 0 && !typing,
+      typing, done,
+      waHref: "https://wa.me/27686104880?text=" + encodeURIComponent(wa),
+      restart: () => this.restart(),
+    };
+  }
+}
+</script>
+</body>
+</html>

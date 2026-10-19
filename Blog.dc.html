@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<meta name="ext-resource-dependency" content="assets/team-duo.jpg" data-resource-id="blogHero">
+</head>
+<body>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-bg-color="#3a7dc8"><rect width="100" height="100" fill="#3a7dc8"/><text x="50" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#ffffff">ES</text></svg></template>
+<x-dc>
+<helmet>
+  <title>Blog | Esti Smit Biokinetics, Paarl</title>
+  <meta name="description" content="Articles from Esti Smit Biokinetics in Paarl on pain, injury recovery, exercise and staying active.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.estismitbio.com/blog">
+  <meta name="theme-color" content="#e58749">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:site_name" content="Esti Smit Biokinetics">
+  <meta property="og:title" content="Blog | Esti Smit Biokinetics, Paarl">
+  <meta property="og:description" content="Articles from Esti Smit Biokinetics in Paarl on pain, injury recovery, exercise and staying active.">
+  <meta property="og:url" content="https://www.estismitbio.com/blog">
+  <meta property="og:image" content="https://www.estismitbio.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Esti Smit Biokinetics, Paarl">
+  <meta name="twitter:description" content="Articles from Esti Smit Biokinetics in Paarl on pain, injury recovery, exercise and staying active.">
+  <meta name="twitter:image" content="https://www.estismitbio.com/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/shape.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/base.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/styles.css">
+  <script src="analytics.js"></script>
+  <script src="blog-posts.js"></script>
+  <script src="reveal.js"></script>
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.js"></script>
+  <script src="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; font-family: var(--font-body); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+    a { color: var(--orange-dark); }
+    a:hover { color: var(--orange); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--charcoal); background: #fff;">
+
+  <header style="position: sticky; top: 0; z-index: 50; background: var(--header-bg); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 24px;">
+      <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="display: flex;">
+        <img src="assets/logo-img.png" alt="Esti Smit Biokineticist — Move Better | Feel Stronger | Live Well" width="133" height="48" style="height: 52px; width: auto; display: block;">
+      </a>
+      <nav aria-label="Main" style="display: {{ desktopNav }}; align-items: center; gap: 16px; white-space: nowrap;">
+        <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.NavLink" href="{{ l.href }}" aria-current="{{ l.current }}" style="{{ l.style }}" hint-size="auto,28px">{{ l.label }}</x-import>
+        </sc-for>
+      </nav>
+      <div style="display: {{ desktopNav }}; align-items: center; gap: 12px; white-space: nowrap; flex-shrink: 0;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="secondary" size="sm" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="130px,42px">WhatsApp</x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" size="sm" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="200px,42px">{{ bookLabel }}</x-import>
+      </div>
+      <button type="button" aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" aria-controls="mobile-nav" onClick="{{ toggleMenu }}" style="display: {{ mobileToggle }}; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--charcoal); cursor: pointer;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="{{ menuIcon }}" size="{{ 24 }}" hint-size="24px,24px"></x-import>
+      </button>
+    </div>
+    <nav id="mobile-nav" aria-label="Mobile" style="display: {{ mobileNav }}; flex-direction: column; gap: 16px; padding: 16px 24px 24px; border-top: 1px solid var(--line); background: #fff;">
+      <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="color: var(--ink); font-weight: 600; font-size: 16px; padding: 10px 2px; text-decoration: none;">{{ l.label }}</a>
+      </sc-for>
+      <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" full-width="{{ true }}" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="100%,50px">Book Your Assessment</x-import>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoSection" image="{{ heroImg }}" image-alt="The Esti Smit Biokinetics team at their practice in Paarl" scrim="hero" hint-size="100%,380px">
+      <div style="max-width: 896px; margin: 0 auto; padding: clamp(80px, 9vw, 120px) 24px; text-align: center;">
+        <h1 data-reveal="" style="font-family: var(--font-heading); font-size: var(--text-h1); font-weight: 500; line-height: 1.08; letter-spacing: -0.01em; color: #fff; margin: 0; text-shadow: var(--text-shadow-on-photo);">Blogs</h1>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="posts" tone="white" width="{{ 1152 }}" padding-y="{{ 96 }}" hint-size="100%,600px">
+      <sc-if value="{{ hasFeatured }}" hint-placeholder-val="{{ true }}">
+        <a href="{{ featured.href }}" data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: center; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 24px; transition: transform 250ms var(--ease-brand), box-shadow 250ms var(--ease-brand), border-color 250ms;" style-hover="transform: translateY(-8px); box-shadow: 0 24px 48px -18px rgba(34,34,34,.18); border-color: transparent;">
+          <div>
+              <sc-if value="{{ featured.hasImage }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ featured.imageAlt }}" style="width: 100%; aspect-ratio: 4 / 3; background: var(--grey-bg) {{ featured.bgImage }} center / cover no-repeat; border-radius: 24px;"></div></sc-if>
+              <sc-if value="{{ featured.noImage }}" hint-placeholder-val="{{ false }}"><sc-if value="{{ featured.imageAlt }}" hint-placeholder-val="{{ false }}"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoPlaceholder" label="{{ featured.imageAlt }}" aspect-ratio="4 / 3" radius="24px" hint-size="100%,260px"></x-import></sc-if></sc-if>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 8px 16px 8px 0;">
+            <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--orange-tint); color: var(--orange-dark); font-size: 13px; font-weight: 800; letter-spacing: .04em;">{{ featured.category }}</span>
+            <h2 style="font-family: var(--font-heading); font-weight: 500; letter-spacing: -0.01em; margin: 0; text-wrap: balance; font-size: clamp(28px, 3vw, 40px); line-height: 1.15; color: var(--charcoal);">{{ featured.title }}</h2>
+            <p style="margin: 0; font-size: 18px; font-weight: 600; line-height: 1.7; color: var(--ink); text-wrap: pretty; font-size: 17px;">{{ featured.excerpt }}</p>
+            <span style="font-size: 14px; font-weight: 600; color: var(--muted);">{{ featured.dateLabel }} · {{ featured.readMins }} min read</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 800; color: var(--orange-dark);">Read the post <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="arrow-right" size="{{ 18 }}" stroke-width="{{ 2 }}" hint-size="18px,18px"></x-import></span>
+          </div>
+        </a>
+      </sc-if>
+      <sc-if value="{{ hasRest }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 28px;">
+          <sc-for list="{{ rest }}" as="p" hint-placeholder-count="3">
+            <a href="{{ p.href }}" data-reveal="" style="display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 20px 20px 28px; transition: transform 250ms var(--ease-brand), box-shadow 250ms var(--ease-brand), border-color 250ms;" style-hover="transform: translateY(-8px); box-shadow: 0 24px 48px -18px rgba(34,34,34,.18); border-color: transparent;">
+              <sc-if value="{{ p.hasImage }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ p.imageAlt }}" style="width: 100%; aspect-ratio: 16 / 10; background: var(--grey-bg) {{ p.bgImage }} center / cover no-repeat; border-radius: 24px;"></div></sc-if>
+              <sc-if value="{{ p.noImage }}" hint-placeholder-val="{{ false }}"><sc-if value="{{ p.imageAlt }}" hint-placeholder-val="{{ false }}"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoPlaceholder" label="{{ p.imageAlt }}" aspect-ratio="16 / 10" radius="24px" hint-size="100%,260px"></x-import></sc-if></sc-if>
+              <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 4px 8px 0;">
+                <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--orange-tint); color: var(--orange-dark); font-size: 13px; font-weight: 800; letter-spacing: .04em;">{{ p.category }}</span>
+                <h2 style="font-family: var(--font-heading); font-weight: 500; letter-spacing: -0.01em; margin: 0; text-wrap: balance; font-size: 24px; line-height: 1.25; color: var(--charcoal);">{{ p.title }}</h2>
+                <p style="margin: 0; font-size: 18px; font-weight: 600; line-height: 1.7; color: var(--ink); text-wrap: pretty; font-size: 16px;">{{ p.excerpt }}</p>
+                <span style="font-size: 14px; font-weight: 600; color: var(--muted);">{{ p.dateLabel }} · {{ p.readMins }} min read</span>
+              </div>
+            </a>
+          </sc-for>
+        </div>
+      </sc-if>
+    </x-import>
+
+  </main>
+
+  <footer style="background: #fff; color: var(--charcoal); border-top: 1px solid var(--line); padding: 80px 0 40px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="align-self: flex-start; display: inline-flex;"><img src="assets/logo-img.png" alt="Esti Smit Biokineticist" width="133" height="48" style="height: 52px; width: auto; display: block;"></a>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; line-height: 1.6; color: var(--muted);">HPCSA-registered biokineticists helping you move beyond pain, recover stronger and stay active.</p>
+        <address style="font-style: normal;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Winelands+Medical+Centre+1D+New+Eskdale+Street+Paarl" target="_blank" rel="noopener" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; align-items: flex-start; line-height: 1.6;"><span style="display: inline-flex; padding-top: 3px;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="map-pin" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import></span><span>Winelands Medical Centre<br>1D New Eskdale Street, De Zoete Inval<br>Paarl 7646</span></a></address>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Menu</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="Homepage.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Home</a></li>
+          <li><a href="Can%20Biokinetics%20Help%20Me.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Can Biokinetics Help Me?</a></li>
+          <li><a href="Homepage.dc.html#conditions" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">What We Treat</a></li>
+          <li><a href="Medical%20Aid.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Medical Aid</a></li>
+          <li><a href="Homepage.dc.html#stories" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Testimonials</a></li>
+          <li><a href="Homepage.dc.html#faq" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">FAQ</a></li>
+          <li><a href="Blog.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Blog</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Contact</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="phone" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>068 610 4880</a></li>
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="message-circle" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>WhatsApp us</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="mail" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>esti.healthplus@gmail.com</a></li>
+          <li><a href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="calendar" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>Book Your Assessment</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Hours</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; font-size: 14px; font-weight: 600; color: var(--muted);">
+          <dt style="color: var(--charcoal);">Mon – Fri</dt><dd style="margin: 0;">08:00 – 16h00</dd>
+          <dt style="color: var(--charcoal);">Saturdays</dt><dd style="margin: 0;">Closed</dd>
+          <dt style="color: var(--charcoal);">Sundays</dt><dd style="margin: 0;">Closed</dd>
+        </dl>
+      </div>
+    </div>
+    <div style="max-width: 1280px; margin: 56px auto 0; padding: 24px 24px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted);">
+      <span>© 2026 Esti Smit Biokinetics. Registered Biokineticist, HPCSA. All rights reserved.</span>
+      <span>Biokineticist in Paarl, Western Cape</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const SITE = "https://www.estismitbio.com/";
+const URL = SITE + "blog";
+const HOME = "Homepage.dc.html";
+const NAV = [
+  { label: "Home", href: HOME },
+  { label: "What We Treat", href: HOME + "#conditions" },
+  { label: "FAQ", href: HOME + "#faq" },
+  { label: "Medical Aid", href: "Medical%20Aid.dc.html" },
+  { label: "Can Biokinetics Help Me?", href: "Can%20Biokinetics%20Help%20Me.dc.html" },
+  { label: "Blog", href: "Blog.dc.html", current: "page" },
+].map((l) => ({ ...l, current: l.current || "false", style: l.current ? { color: "var(--orange-dark)" } : {} }));
+const postHref = (slug) => "Blog%20Post.dc.html?post=" + slug;
+const prep = (p) => ({ ...p, href: postHref(p.slug), hasImage: !!p.image, noImage: !p.image, bgImage: p.image ? "url(" + p.image + ")" : "", imageAlt: p.imageAlt || p.title });
+
+class Component extends DCLogic {
+  state = { narrow: false, wide: false, menuOpen: false };
+  componentDidMount() {
+    document.documentElement.lang = "en-ZA";
+    this.onResize = () => this.setState({ narrow: window.innerWidth < 1080, wide: window.innerWidth >= 1360 });
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+    this.poll = setInterval(() => { if (window.ESB_BLOG) { clearInterval(this.poll); this.setState({ ready: true }, () => this.seo && this.seo()); } }, 50);
+  }
+  seo() {
+    const posts = window.ESB_BLOG.POSTS;
+    const schema = { "@context": "https://schema.org", "@graph": [
+      { "@type": "Blog", "@id": URL + "#blog", url: URL, name: "Esti Smit Biokinetics Blog", inLanguage: "en-ZA", publisher: { "@id": SITE + "#practice" },
+        blogPost: posts.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: SITE + "blog/" + p.slug, datePublished: p.date, author: { "@type": "Person", name: p.author } })) },
+      { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: SITE }, { "@type": "ListItem", position: 2, name: "Blog", item: URL }] },
+    ] };
+    let s = document.getElementById("esb-jsonld");
+    if (!s) { s = document.createElement("script"); s.type = "application/ld+json"; s.id = "esb-jsonld"; document.head.appendChild(s); }
+    s.textContent = JSON.stringify(schema);
+  }
+  componentWillUnmount() { window.removeEventListener("resize", this.onResize); clearInterval(this.poll); }
+  renderVals() {
+    const { narrow, wide, menuOpen } = this.state;
+    const posts = ((window.ESB_BLOG && window.ESB_BLOG.POSTS) || []).map(prep);
+    return {
+      nav: NAV,
+      desktopNav: narrow ? "none" : "flex",
+      bookLabel: wide ? "Book Your Assessment" : "Book Now",
+      mobileToggle: narrow ? "flex" : "none",
+      mobileNav: narrow && menuOpen ? "flex" : "none",
+      menuOpen, menuIcon: menuOpen ? "x" : "menu",
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      heroImg: (window.__resources && window.__resources.blogHero) || "assets/team-duo.jpg",
+      featured: posts[0] || {}, hasFeatured: posts.length > 0,
+      rest: posts.slice(1), hasRest: posts.length > 1,
+    };
+  }
+}
+</script>
+</body>
+</html>

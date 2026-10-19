@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Medical Aid &amp; Wellness Rewards | Biokineticist in Paarl</title>
+  <meta name="description" content="Use your medical aid for biokinetics in Paarl. Vitality Health Checks and Fitness Assessments, Momentum Multiply assessments and Medscheme weight management support.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.estismitbio.com/medical-aid">
+  <meta name="theme-color" content="#e58749">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:site_name" content="Esti Smit Biokinetics">
+  <meta property="og:title" content="Medical Aid &amp; Wellness Rewards">
+  <meta property="og:description" content="Make the most of your medical aid benefits at Esti Smit Biokinetics, Paarl.">
+  <meta property="og:url" content="https://www.estismitbio.com/medical-aid">
+  <meta property="og:image" content="https://www.estismitbio.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Medical Aid &amp; Wellness Rewards">
+  <meta name="twitter:description" content="Make the most of your medical aid benefits at Esti Smit Biokinetics, Paarl.">
+  <meta name="twitter:image" content="https://www.estismitbio.com/og-image.jpg">
+  <link rel="preload" as="image" href="assets/method-img.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/shape.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/base.css">
+  <link rel="stylesheet" href="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/styles.css">
+  <script src="analytics.js"></script>
+  <script src="reveal.js"></script>
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.js"></script>
+  <script src="_ds/esti-smit-biokinetics-design-system-15537923-a910-409b-93c1-ba2dd24d1ccf/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; font-family: var(--font-body); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+    a { color: var(--orange-dark); }
+    a:hover { color: var(--orange); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--charcoal); background: #fff;">
+
+  <header style="position: sticky; top: 0; z-index: 50; background: var(--header-bg); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; gap: 24px;">
+      <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="display: flex;">
+        <img src="assets/logo-img.png" alt="Esti Smit Biokineticist — Move Better | Feel Stronger | Live Well" width="133" height="48" style="height: 52px; width: auto; display: block;">
+      </a>
+      <nav aria-label="Main" style="display: {{ desktopNav }}; align-items: center; gap: 16px; white-space: nowrap;">
+        <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.NavLink" href="{{ l.href }}" aria-current="{{ l.current }}" style="{{ l.style }}" hint-size="auto,28px">{{ l.label }}</x-import>
+        </sc-for>
+      </nav>
+      <div style="display: {{ desktopNav }}; align-items: center; gap: 12px; white-space: nowrap; flex-shrink: 0;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="secondary" size="sm" href="https://wa.me/27686104880" icon-left="message-circle" hint-size="130px,42px">WhatsApp</x-import>
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" size="sm" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="200px,42px">{{ bookLabel }}</x-import>
+      </div>
+      <button type="button" aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" aria-controls="mobile-nav" onClick="{{ toggleMenu }}" style="display: {{ mobileToggle }}; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--charcoal); cursor: pointer;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="{{ menuIcon }}" size="{{ 24 }}" hint-size="24px,24px"></x-import>
+      </button>
+    </div>
+    <nav id="mobile-nav" aria-label="Mobile" style="display: {{ mobileNav }}; flex-direction: column; gap: 16px; padding: 16px 24px 24px; border-top: 1px solid var(--line); background: #fff;">
+      <sc-for list="{{ nav }}" as="l" hint-placeholder-count="8">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="color: var(--ink); font-weight: 600; font-size: 16px; padding: 10px 2px; text-decoration: none;">{{ l.label }}</a>
+      </sc-for>
+      <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" full-width="{{ true }}" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" hint-size="100%,50px">Book Your Assessment</x-import>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.PhotoSection" image="assets/method-img.jpg" image-alt="Biokineticist at Esti Smit Biokinetics in Paarl guiding a client through a fitness assessment" scrim="hero" hint-size="100%,560px">
+      <div style="max-width: 896px; margin: 0 auto; padding: clamp(96px, 11vw, 144px) 24px; text-align: center;">
+        <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Eyebrow" tone="warm" size="base" on-photo="{{ true }}" hint-size="100%,24px">Medical Aid &amp; Wellness Rewards</x-import>
+        <h1 data-reveal="" data-reveal-delay="120" style="font-family: var(--font-heading); font-size: var(--text-h1); font-weight: 500; line-height: 1.08; letter-spacing: -0.01em; color: #fff; margin: 20px 0 24px; text-wrap: balance; text-shadow: var(--text-shadow-on-photo);">Make the Most of Your Medical Aid Benefits</h1>
+        <div data-reveal="" data-reveal-delay="240" style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto;">
+          <p style="margin: 0; font-size: var(--text-lead); font-weight: 600; line-height: var(--leading-body); color: #fff; text-wrap: pretty; text-shadow: var(--text-shadow-on-photo);">Did you know your medical aid could help you move better, get stronger and even reward you for taking care of your health?</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: #fff; text-wrap: pretty; text-shadow: var(--text-shadow-on-photo);">We work with most South African medical aids and selected wellness, fitness and weight management programmes.</p>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="medical-aids" tone="white" width="{{ 1152 }}" padding-y="{{ 96 }}" hint-size="100%,900px">
+      <div style="scroll-margin-top: 84px;">
+        <div data-reveal="" style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 40px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: var(--orange);  color: #fff; font-family: var(--font-heading); font-size: 22px; font-weight: 500;">1</span>
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Medical Aids We Work With</h2>
+          
+        </div>
+        <p data-reveal="" style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; margin-bottom: 24px;">We work with most major South African medical aids, including:</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 14px;">
+          <li data-reveal="" data-reveal-delay="0" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Discovery Health</li>
+          <li data-reveal="" data-reveal-delay="60" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Momentum Medical Scheme</li>
+          <li data-reveal="" data-reveal-delay="120" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Bonitas</li>
+          <li data-reveal="" data-reveal-delay="180" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Medihelp</li>
+          <li data-reveal="" data-reveal-delay="240" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Bestmed</li>
+          <li data-reveal="" data-reveal-delay="300" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Fedhealth</li>
+          <li data-reveal="" data-reveal-delay="360" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Polmed</li>
+          <li data-reveal="" data-reveal-delay="420" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>GEMS</li>
+          <li data-reveal="" data-reveal-delay="480" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>Profmed</li>
+          <li data-reveal="" data-reveal-delay="480" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>AECI Medical Aid Society</li>
+          <li data-reveal="" data-reveal-delay="480" style="display: flex; align-items: center; gap: 12px; background: var(--grey-bg); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--charcoal);"><span style="display: inline-flex; color: var(--blue);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="check-circle-2" size="{{ 20 }}" stroke-width="{{ 1.8 }}" hint-size="20px,20px"></x-import></span>SAMWUMED</li>
+          <li data-reveal="" data-reveal-delay="480" style="display: flex; align-items: center; border: 1px dashed var(--line); border-radius: 18px; padding: 18px 20px; font-size: 16px; font-weight: 700; color: var(--muted);">And many more!</li>
+        </ul>
+
+        <div data-reveal="" style="margin-top: 56px; background: var(--grey-bg); border-radius: 32px; padding: clamp(32px, 4vw, 56px); display: flex; flex-direction: column; gap: 16px; max-width: 896px;">
+          <h3 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Does Medical Aid Cover Biokinetics?</h3>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: var(--charcoal); font-weight: 800;">In most cases, Biokinetics sessions are paid from your medical savings account.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">However, certain medical aid schemes and benefit options provide additional cover for Biokinetics, rehabilitation or specific health management programmes.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Coverage depends on your medical aid, your specific plan and your available benefits.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;"><strong style="font-weight: 800; color: var(--charcoal);">Not sure what your medical aid covers?</strong> <a href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20help%20understanding%20what%20my%20medical%20aid%20covers%20for%20biokinetics." target="_blank" rel="noopener noreferrer" style="color: var(--orange-dark); font-weight: 800;">Get in touch with us</a> and we'll help you understand which benefits to enquire about.</p>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="vitality" tone="grey" width="{{ 1152 }}" padding-y="{{ 96 }}" hint-size="100%,900px">
+      <div style="scroll-margin-top: 84px;">
+        <div data-reveal="" style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 40px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: var(--orange);  color: #fff; font-family: var(--font-heading); font-size: 22px; font-weight: 500;">2</span>
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Discovery Vitality</h2>
+          <h3 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--orange-dark);">Get Rewarded for Looking After Your Health</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 24px;">
+          <article data-reveal="" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+              <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Vitality Health Check</h4>
+              <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--orange-tint); color: var(--orange-dark); font-size: 14px; font-weight: 800;">Up to 22,500 Vitality points</span>
+            </div>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Complete your annual Vitality Health Check to assess important health indicators and earn points towards your Vitality status.</p>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Eligible members receive one funded Vitality Health Check per year.</p>
+                      <div style="margin-top: auto; padding-top: 8px; display: flex;">
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20book%20a%20Discovery%20Vitality%20health%20check." target="_blank" icon-right="arrow-right" hint-size="150px,52px">Book Now</x-import>
+            </div>
+          </article>
+          <article data-reveal="" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+              <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Vitality Fitness Assessment</h4>
+              <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--orange-tint); color: var(--orange-dark); font-size: 14px; font-weight: 800;">R580</span>
+            </div>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Discover your current fitness level through a professional assessment with a registered Biokineticist.</p>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Earn up to <strong style="font-weight: 800; color: var(--charcoal);">10,000 additional Vitality points</strong>, depending on your results and the applicable Vitality rules.</p>
+                      <div style="margin-top: auto; padding-top: 8px; display: flex;">
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20book%20a%20Discovery%20Vitality%20fitness%20assessment." target="_blank" icon-right="arrow-right" hint-size="150px,52px">Book Now</x-import>
+            </div>
+          </article>
+        </div>
+        <div data-reveal="" style="margin-top: 28px; background: #fff; border: 1px solid var(--line); border-radius: 32px; padding: clamp(32px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 48px; align-items: center;">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Why Not Do Both at Once?</h4>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Book your Vitality Health Check and Fitness Assessment together and get both done in one convenient visit.</p>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: var(--charcoal); font-weight: 800;">One appointment. Two assessments. More opportunities to earn Vitality points.</p>
+          </div>
+          <div style="display: flex; justify-content: flex-start;">
+            <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="300px,52px">Book My Vitality Assessments</x-import>
+          </div>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="multiply" tone="white" width="{{ 1152 }}" padding-y="{{ 96 }}" hint-size="100%,860px">
+      <div style="scroll-margin-top: 84px;">
+        <div data-reveal="" style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 40px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: var(--orange);  color: #fff; font-family: var(--font-heading); font-size: 22px; font-weight: 500;">3</span>
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Momentum Multiply</h2>
+          <h3 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--orange-dark);">Your Healthier Lifestyle Deserves Rewards</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 24px;">
+          <article data-reveal="" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+              <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Multiply Health Assessment</h4>
+              
+            </div>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Complete your annual health assessment and take advantage of the health benefits available through your Momentum Multiply membership.</p>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Eligible members can receive one funded health assessment per year.</p>
+                      <div style="margin-top: auto; padding-top: 8px; display: flex;">
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20book%20a%20Momentum%20Multiply%20health%20assessment." target="_blank" icon-right="arrow-right" hint-size="150px,52px">Book Now</x-import>
+            </div>
+          </article>
+          <article data-reveal="" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card-lg); padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+              <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Multiply Fitness Assessment</h4>
+              <span style="display: inline-flex; padding: 6px 14px; border-radius: 999px; background: var(--orange-tint); color: var(--orange-dark); font-size: 14px; font-weight: 800;">R480</span>
+            </div>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Understand your fitness level, identify areas for improvement and work towards your Multiply fitness rewards.</p>
+                      <div style="margin-top: auto; padding-top: 8px; display: flex;">
+              <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20book%20a%20Momentum%20Multiply%20fitness%20assessment." target="_blank" icon-right="arrow-right" hint-size="150px,52px">Book Now</x-import>
+            </div>
+          </article>
+        </div>
+        <div data-reveal="" style="margin-top: 28px; background: var(--grey-bg); border: 0; border-radius: 32px; padding: clamp(32px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px 48px; align-items: center;">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <h4 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Get Both Assessments Done Together</h4>
+            <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Save yourself an extra trip by booking your health and fitness assessments during the same visit.</p>
+            
+          </div>
+          <div style="display: flex; justify-content: flex-start;">
+            <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" icon-right="arrow-right" hint-size="300px,52px">Book My Multiply Assessments</x-import>
+          </div>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="weight-management" tone="blue" grain="{{ true }}" width="{{ 1024 }}" padding-y="{{ 112 }}" hint-size="100%,820px">
+      <div style="scroll-margin-top: 84px; color: #fff;">
+        <div data-reveal="" style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 40px;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); color: #fff; font-family: var(--font-heading); font-size: 22px; font-weight: 500;">4</span>
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: #fff;">Medscheme Weight Management Programme</h2>
+          <h3 style="font-family: var(--font-heading); font-size: clamp(24px, 2.4vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: #fff;">More Than Weight Loss. A Healthier, Stronger You.</h3>
+        </div>
+        <div data-reveal="" style="display: flex; flex-direction: column; gap: 18px; max-width: 768px;">
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: #fff;">Some medical aid schemes administered by Medscheme offer structured weight management programmes to qualifying members.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: #fff;">These may include members of:</p>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+            <li style="display: inline-flex; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); font-size: 15px; font-weight: 700; color: #fff;">Polmed</li>
+            <li style="display: inline-flex; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); font-size: 15px; font-weight: 700; color: #fff;">Fedhealth</li>
+            <li style="display: inline-flex; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); font-size: 15px; font-weight: 700; color: #fff;">AECI Medical Aid Society</li>
+            <li style="display: inline-flex; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); font-size: 15px; font-weight: 700; color: #fff;">SAMWUMED</li>
+            <li style="display: inline-flex; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); font-size: 15px; font-weight: 700; color: #fff;">Other participating schemes</li>
+          </ul>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: #fff; margin-top: 8px;">At Esti Smit Biokinetics, we focus on helping you improve your strength, fitness, mobility and long-term physical health.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: #fff;">Our Biokinetics approach supports sustainable progress through safe, structured and personalised exercise.</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: #fff; font-weight: 800;">Your medical aid may provide dedicated benefits for weight management, subject to your eligibility and programme requirements.</p>
+          <div style="display: flex; margin-top: 12px;">
+            <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="primary" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20enquire%20about%20the%20Medscheme%20weight%20management%20programme." icon-right="arrow-right" hint-size="320px,52px">Enquire About Weight Management</x-import>
+          </div>
+        </div>
+      </div>
+    </x-import>
+
+    <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.BandSection" id="not-sure" tone="grey" width="{{ 768 }}" padding-y="{{ 112 }}" hint-size="100%,560px">
+      <div data-reveal="" style="display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center;">
+        <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: var(--orange);  color: #fff; font-family: var(--font-heading); font-size: 22px; font-weight: 500;">5</span>
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; margin: 0; text-wrap: balance; color: var(--charcoal);">Not Sure What You're Covered For?</h2>
+        <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Every medical aid and benefit option is different.</p>
+        <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty;">Whether you're looking for rehabilitation, weight management support, a Vitality Health Check or a fitness assessment, our team is happy to help you find the right starting point.</p>
+        <p style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.65; color: var(--ink); text-wrap: pretty; color: var(--charcoal); font-weight: 800;">Let's get you moving towards better health.</p>
+        <div style="display: flex; margin-top: 8px;">
+          <x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Button" variant="whatsapp" href="https://wa.me/27686104880?text=Hi!%20I'd%20like%20to%20find%20out%20what%20my%20medical%20aid%20covers." icon-left="message-circle" hint-size="240px,52px">WhatsApp Our Team</x-import>
+        </div>
+      </div>
+    </x-import>
+
+  </main>
+
+  <footer style="background: #fff; color: var(--charcoal); border-top: 1px solid var(--line); padding: 80px 0 40px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="Homepage.dc.html" aria-label="Esti Smit Biokinetics — home" style="align-self: flex-start; display: inline-flex;"><img src="assets/logo-img.png" alt="Esti Smit Biokineticist" width="133" height="48" style="height: 52px; width: auto; display: block;"></a>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; line-height: 1.6; color: var(--muted);">HPCSA-registered biokineticists helping you move beyond pain, recover stronger and stay active.</p>
+        <address style="font-style: normal;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Winelands+Medical+Centre+1D+New+Eskdale+Street+Paarl" target="_blank" rel="noopener" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; align-items: flex-start; line-height: 1.6;"><span style="display: inline-flex; padding-top: 3px;"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="map-pin" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import></span><span>Winelands Medical Centre<br>1D New Eskdale Street, De Zoete Inval<br>Paarl 7646</span></a></address>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Menu</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="Homepage.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Home</a></li>
+          <li><a href="Can%20Biokinetics%20Help%20Me.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Can Biokinetics Help Me?</a></li>
+          <li><a href="Homepage.dc.html#conditions" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">What We Treat</a></li>
+          <li><a href="Medical%20Aid.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Medical Aid</a></li>
+          <li><a href="Homepage.dc.html#stories" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Testimonials</a></li>
+          <li><a href="Homepage.dc.html#faq" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">FAQ</a></li>
+          <li><a href="Blog.dc.html" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);">Blog</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Contact</p>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="phone" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>068 610 4880</a></li>
+          <li><a href="https://wa.me/27686104880" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="message-circle" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>WhatsApp us</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="mail" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>esti.healthplus@gmail.com</a></li>
+          <li><a href="https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94" target="_blank" rel="noopener noreferrer" style="color: var(--muted); font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;" style-hover="color: var(--orange-dark);"><x-import component-from-global-scope="EstiSmitBiokineticsDesignSystem_155379.Icon" name="calendar" size="{{ 16 }}" stroke-width="{{ 1.8 }}" hint-size="16px,16px"></x-import>Book Your Assessment</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; font-weight: 800; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--orange-dark);">Hours</p>
+        <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; font-size: 14px; font-weight: 600; color: var(--muted);">
+          <dt style="color: var(--charcoal);">Mon – Fri</dt><dd style="margin: 0;">08:00 – 16h00</dd>
+          <dt style="color: var(--charcoal);">Saturdays</dt><dd style="margin: 0;">Closed</dd>
+          <dt style="color: var(--charcoal);">Sundays</dt><dd style="margin: 0;">Closed</dd>
+        </dl>
+      </div>
+    </div>
+    <div style="max-width: 1280px; margin: 56px auto 0; padding: 24px 24px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted);">
+      <span>© 2026 Esti Smit Biokinetics. Registered Biokineticist, HPCSA. All rights reserved.</span>
+      <span>Biokineticist in Paarl, Western Cape</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const SITE = "https://www.estismitbio.com/";
+const URL = SITE + "medical-aid";
+const HOME = "Homepage.dc.html";
+const NAV = [
+  { label: "Home", href: HOME },
+  { label: "What We Treat", href: HOME + "#conditions" },
+  { label: "FAQ", href: HOME + "#faq" },
+  { label: "Medical Aid", href: "Medical%20Aid.dc.html", current: "page" },
+  { label: "Can Biokinetics Help Me?", href: "Can%20Biokinetics%20Help%20Me.dc.html" },
+  { label: "Blog", href: "Blog.dc.html" },
+].map((l) => ({ ...l, current: l.current || "false", style: l.current ? { color: "var(--orange-dark)" } : {} }));
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebPage", "@id": URL + "#webpage", url: URL, name: "Medical Aid & Wellness Rewards | Biokineticist in Paarl", description: "Use your medical aid for biokinetics in Paarl. Vitality Health Checks and Fitness Assessments, Momentum Multiply assessments and Medscheme weight management support.", inLanguage: "en-ZA", isPartOf: { "@id": SITE + "#website" }, about: { "@id": SITE + "#practice" }, breadcrumb: { "@id": URL + "#breadcrumb" } },
+    { "@type": "BreadcrumbList", "@id": URL + "#breadcrumb", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Medical Aid", item: URL },
+    ] },
+  ],
+};
+
+class Component extends DCLogic {
+  state = { narrow: false, wide: false, menuOpen: false };
+  componentDidMount() {
+    document.documentElement.lang = "en-ZA";
+    this.onResize = () => this.setState({ narrow: window.innerWidth < 1080, wide: window.innerWidth >= 1360 });
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+    let s = document.getElementById("esb-jsonld");
+    if (!s) { s = document.createElement("script"); s.type = "application/ld+json"; s.id = "esb-jsonld"; document.head.appendChild(s); }
+    s.textContent = JSON.stringify(SCHEMA);
+  }
+  componentWillUnmount() { window.removeEventListener("resize", this.onResize); }
+  renderVals() {
+    const { narrow, wide, menuOpen } = this.state;
+    return {
+      nav: NAV,
+      desktopNav: narrow ? "none" : "flex",
+      bookLabel: wide ? "Book Your Assessment" : "Book Now",
+      mobileToggle: narrow ? "flex" : "none",
+      mobileNav: narrow && menuOpen ? "flex" : "none",
+      menuOpen, menuIcon: menuOpen ? "x" : "menu",
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+    };
+  }
+}
+</script>
+</body>
+</html>
