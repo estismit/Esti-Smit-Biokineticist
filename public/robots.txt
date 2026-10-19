@@ -28,4 +28,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://www.estismitbio.com/sitemap.xml
+Sitemap: https://www.estismitbio.co.za/sitemap.xml
