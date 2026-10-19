@@ -8,7 +8,7 @@ export const metadata = {
   title: "Can Biokinetics Help Me? | Biokineticist in Paarl",
   description: "Answer a few quick questions to find out if biokinetics can help with your pain, injury, surgery recovery or health goals. Biokineticists in Paarl.",
   alternates: { canonical: "/can-biokinetics-help-me" },
-  openGraph: { title: "Can Biokinetics Help Me? | Biokineticist in Paarl", url: "https://www.estismitbio.com/can-biokinetics-help-me" },
+  openGraph: { title: "Can Biokinetics Help Me? | Biokineticist in Paarl", url: "https://www.estismitbio.co.za/can-biokinetics-help-me" },
 };
 
 export default function Page() {
