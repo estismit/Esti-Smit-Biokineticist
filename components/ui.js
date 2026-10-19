@@ -629,7 +629,7 @@ function TestimonialCard({
       color: "var(--muted)",
       margin: 0
     }
-  }, story) : null, /*#__PURE__*/React.createElement("p", {
+  }, story) : null, quote ? /*#__PURE__*/React.createElement("p", {
     style: {
       fontFamily: "var(--font-heading)",
       fontSize: "18px",
@@ -638,19 +638,38 @@ function TestimonialCard({
       margin: 0,
       color: "var(--charcoal)"
     }
-  }, "\u201C", quote, "\u201D"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+  }, "\u201C", quote, "\u201D") : null, /*#__PURE__*/React.createElement("div", {
+    style: { display: "flex", justifyContent: "flex-end" }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "quote",
+    size: 22,
+    color: "var(--orange)"
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: { display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "6px" }
+  }, /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: "14px",
       fontWeight: 600,
       margin: 0
     }
-  }, name), /*#__PURE__*/React.createElement("p", {
+  }, name), /*#__PURE__*/React.createElement("div", {
+    role: "img", "aria-label": "5 stars on Google",
+    style: { display: "flex", alignItems: "center", gap: "6px" }
+  }, /*#__PURE__*/React.createElement("svg", { width: 18, height: 18, viewBox: "0 0 48 48", "aria-hidden": "true" },
+    /*#__PURE__*/React.createElement("path", { fill: "#EA4335", d: "M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z" }),
+    /*#__PURE__*/React.createElement("path", { fill: "#4285F4", d: "M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z" }),
+    /*#__PURE__*/React.createElement("path", { fill: "#FBBC05", d: "M10.5 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.9-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.1z" }),
+    /*#__PURE__*/React.createElement("path", { fill: "#34A853", d: "M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z" })
+  ), /*#__PURE__*/React.createElement("div", { style: { display: "flex", gap: "1px" } },
+    [0, 1, 2, 3, 4].map(i => /*#__PURE__*/React.createElement("svg", { key: i, width: 14, height: 14, viewBox: "0 0 24 24", "aria-hidden": "true" },
+      /*#__PURE__*/React.createElement("path", { fill: "#FBBC05", d: "M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" }))
+    )))), programme ? /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: "12px",
       color: "var(--muted)",
       margin: 0
     }
-  }, programme)));
+  }, programme) : null));
 }
 
 return TestimonialCard;
