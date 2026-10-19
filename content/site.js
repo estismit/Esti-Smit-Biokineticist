@@ -1,4 +1,4 @@
-export const SITE = "https://www.estismitbio.com/";
+export const SITE = "https://www.estismitbio.co.za/";
 export const BOOK = "https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94";
 export const WA = "https://wa.me/27686104880";
 export const GMAIL = "https://mail.google.com/mail/?view=cm&fs=1&to=esti.healthplus@gmail.com";
