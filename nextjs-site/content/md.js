@@ -1,0 +1,1 @@
+export const md = (s) => String(s || "").split(/(\*\*[^*]+\*\*|\*[^*]+\*)/).filter(Boolean).map((t) => t.startsWith("**") ? { t: t.slice(2, -2), b: true } : t.startsWith("*") ? { t: t.slice(1, -1), i: true } : { t });
