@@ -9,7 +9,7 @@ export const metadata = {
   title: "Biokineticist in Paarl | Esti Smit Biokinetics",
   description: "HPCSA-registered biokineticists in Paarl. Personalised exercise therapy for back pain, injury and post-op rehab. Medical aid friendly. Book your assessment.",
   alternates: { canonical: "/" },
-  openGraph: { title: "Biokineticist in Paarl | Esti Smit Biokinetics", description: "Move beyond pain. Personalised biokinetics programmes for pain, injury, surgery recovery and healthy ageing at Winelands Medical Centre, Paarl.", url: "https://www.estismitbio.com/" },
+  openGraph: { title: "Biokineticist in Paarl | Esti Smit Biokinetics", description: "Move beyond pain. Personalised biokinetics programmes for pain, injury, surgery recovery and healthy ageing at Winelands Medical Centre, Paarl.", url: "https://www.estismitbio.co.za/" },
   twitter: { title: "Biokineticist in Paarl | Esti Smit Biokinetics", description: "Personalised biokinetics programmes in Paarl. Book your assessment or send us a WhatsApp." },
 };
 
