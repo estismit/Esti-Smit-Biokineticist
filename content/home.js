@@ -1,5 +1,5 @@
 const BOOK = "https://mygc.co.za/external/diary/7b937c87-0ed3-42b1-893e-374071e5bb94";
-const SITE = "https://www.estismitbio.com/";
+const SITE = "https://www.estismitbio.co.za/";
 const waLink = (n) => "https://wa.me/27686104880?text=" + encodeURIComponent("Hi! I'd like to get started with the " + n.replace(/™/g, "").trim() + " programme.");
 const PROGRAMMES = [
   { num: "01", name: "Move Beyond Pain™", blurb: "For ongoing pain that's stopping you from enjoying life.", accent: "orange", tags: ["Back pain","Neck pain","Hip pain","Shoulder pain","Knee pain","Arthritis","Ankle pain","Sciatica","Chronic pain","Tendinopathies","Repetitive strain injuries"] },
