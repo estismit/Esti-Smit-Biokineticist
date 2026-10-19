@@ -16,10 +16,10 @@ Biokinetics is exercise therapy. It is the last stage of the recovery chain, bet
 
 ## Main pages
 
-- [Home](https://www.estismitbio.com/): Programmes, conditions treated, how a programme works, team, patient reviews and FAQ.
-- [Can Biokinetics Help Me?](https://www.estismitbio.com/can-biokinetics-help-me): A short guided questionnaire to find out whether biokinetics suits your situation.
-- [Medical Aid](https://www.estismitbio.com/medical-aid): How medical aid covers biokinetics, Discovery Vitality Health Check and Fitness Assessment, Momentum Multiply assessments, and Medscheme weight management support.
-- [Blog](https://www.estismitbio.com/blog): Articles on knee pain, lower back pain, sports injuries and what a biokineticist does.
+- [Home](https://www.estismitbio.co.za/): Programmes, conditions treated, how a programme works, team, patient reviews and FAQ.
+- [Can Biokinetics Help Me?](https://www.estismitbio.co.za/can-biokinetics-help-me): A short guided questionnaire to find out whether biokinetics suits your situation.
+- [Medical Aid](https://www.estismitbio.co.za/medical-aid): How medical aid covers biokinetics, Discovery Vitality Health Check and Fitness Assessment, Momentum Multiply assessments, and Medscheme weight management support.
+- [Blog](https://www.estismitbio.co.za/blog): Articles on knee pain, lower back pain, sports injuries and what a biokineticist does.
 
 ## Programmes
 
@@ -43,4 +43,4 @@ Knee, hip, neck and shoulder, low back, foot and ankle, elbow and wrist pain and
 
 ## Optional
 
-- [Sitemap](https://www.estismitbio.com/sitemap.xml)
+- [Sitemap](https://www.estismitbio.co.za/sitemap.xml)
