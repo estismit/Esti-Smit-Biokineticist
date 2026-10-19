@@ -4,7 +4,7 @@ import FacebookPixelPageView from "./FacebookPixelPageView";
 import HashJump from "../components/HashJump";
 
 export const metadata = {
-  metadataBase: new URL("https://www.estismitbio.com"),
+  metadataBase: new URL("https://www.estismitbio.co.za"),
   title: "Biokineticist in Paarl | Esti Smit Biokinetics",
   description: "HPCSA-registered biokineticists in Paarl. Personalised exercise therapy for back pain, injury and post-op rehab. Medical aid friendly. Book your assessment.",
   robots: { index: true, follow: true, "max-image-preview": "large" },
