@@ -42,7 +42,7 @@ export default function SiteFooter() {
       </div>
       <div style={{ maxWidth: 1280, margin: "56px auto 0", padding: "24px 24px 0", borderTop: "1px solid var(--line)", display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: 12, fontSize: 12, color: "var(--muted)" }}>
         <span>© 2026 Esti Smit Biokinetics. Registered Biokineticist, HPCSA. All rights reserved.</span>
-        <span>Biokineticist in Paarl, Western Cape</span>
+        <span style={{ display: "flex", flexWrap: "wrap", gap: "4px 20px" }}><span>Biokineticist in Paarl, Western Cape</span><a href="/ai-info" style={{ color: "inherit", textDecoration: "underline" }}>Practice summary for AI assistants</a></span>
       </div>
     </footer>
   );
