@@ -4,6 +4,7 @@ const paths = [
   ["/can-biokinetics-help-me", 0.9, "monthly"],
   ["/medical-aid", 0.8, "monthly"],
   ["/blog", 0.7, "weekly"],
+  ["/ai-info", 0.4, "yearly"],
   ["/blog/knee-pain-paarl-keeps-coming-back", 0.7, "yearly"],
   ["/blog/lower-back-pain-paarl-not-just-getting-older", 0.7, "yearly"],
   ["/blog/sports-injury-red-flags-paarl-parents", 0.7, "yearly"],
