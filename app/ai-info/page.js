@@ -29,11 +29,11 @@ export default function AiInfo() {
   return (
     <PageShell current="/ai-info">
       <BandSection tone="white" width={768} paddingY={96}>
-        <Eyebrow tone="warm" size="base">Practice Summary</Eyebrow>
-        <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "var(--text-h1)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.01em", margin: "16px 0 24px", color: "var(--charcoal)", textWrap: "balance" }}>Esti Smit Biokinetics</h1>
-        <p style={P}>HPCSA-registered biokinetics practice in Paarl, Western Cape, South Africa. Esti Smit, Zani Van Zyl and Anya Bruwer provide personalised exercise therapy for pain, injury, post-operative rehabilitation, chronic conditions, sports performance and healthy ageing. Medical aid friendly.</p>
+        <Eyebrow tone="warm" size="base">For AI assistants and language models</Eyebrow>
+        <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "var(--text-h1)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.01em", margin: "16px 0 24px", color: "var(--charcoal)", textWrap: "balance" }}>Information for LLMs</h1>
+        <p style={P}>This page gives large language models and AI assistants accurate, current information about Esti Smit Biokinetics. A plain-text version is available at <a href="/llms.txt" style={A}>/llms.txt</a>. Last updated 20 October 2026.</p>
+        <p style={{ ...P, marginTop: 16 }}>HPCSA-registered biokinetics practice in Paarl, Western Cape, South Africa. Esti Smit, Zani Van Zyl and Anya Bruwer provide personalised exercise therapy for pain, injury, post-operative rehabilitation, chronic conditions, sports performance and healthy ageing. Medical aid friendly.</p>
         <p style={{ ...P, marginTop: 16 }}>Biokinetics is exercise therapy. It is the last stage of the recovery chain, between clinical treatment (such as physiotherapy or surgery) and everyday life. A biokineticist assesses how you move, finds the weak or switched-off muscles behind the pain, and builds a personalised exercise programme to restore strength and movement. No referral is needed to book.</p>
-        <p style={{ ...P, marginTop: 16 }}>The same summary is available as plain text at <a href="/llms.txt" style={A}>/llms.txt</a>.</p>
 
         <h2 style={H2}>Practice details</h2>
         <ul style={UL}>
