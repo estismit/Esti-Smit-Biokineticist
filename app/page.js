@@ -1,129 +1,71 @@
-import PageShell from "../components/PageShell";
-import JsonLd from "../components/JsonLd";
-import Conditions from "../components/Conditions";
-import { BandSection, PhotoSection, SectionHeading, IconChip, TestimonialCard, FaqAccordion, InfoCard, Button, Icon } from "../components/ui";
-import { REGIONS, ROOT_STEPS, TESTIMONIALS, FAQS, SCHEMA } from "../content/home";
-import { BOOK, WA, GMAIL, MAPS } from "../content/site";
+import PageShell from "../../components/PageShell";
+import { BandSection, Eyebrow } from "../../components/ui";
+import { BOOK, SITE } from "../../content/site";
 
+const URL_ = SITE + "ai-info";
 export const metadata = {
-  title: "Biokineticist in Paarl | Esti Smit Biokinetics",
-  description: "HPCSA-registered biokineticists in Paarl. Personalised exercise therapy for back pain, injury and post-op rehab. Medical aid friendly. Book your assessment.",
-  alternates: { canonical: "/" },
-  openGraph: { title: "Biokineticist in Paarl | Esti Smit Biokinetics", description: "Move beyond pain. Personalised biokinetics programmes for pain, injury, surgery recovery and healthy ageing at Winelands Medical Centre, Paarl.", url: "https://www.estismitbio.co.za/" },
-  twitter: { title: "Biokineticist in Paarl | Esti Smit Biokinetics", description: "Personalised biokinetics programmes in Paarl. Book your assessment or send us a WhatsApp." },
+  title: "Practice Summary | Esti Smit Biokinetics, Paarl",
+  description: "A plain-text summary of Esti Smit Biokinetics in Paarl: location, contact details, programmes, conditions treated and medical aid options.",
+  alternates: { canonical: "/ai-info" },
+  openGraph: { title: "Practice Summary | Esti Smit Biokinetics, Paarl", url: URL_ },
 };
 
-const h2 = { fontFamily: "var(--font-heading)", fontSize: "clamp(32px, 3.6vw, 44px)", fontWeight: 500, lineHeight: 1.2, letterSpacing: "var(--tracking-display)", color: "#fff", maxWidth: 720, margin: "0 auto 40px", textWrap: "balance" };
+const P = { margin: 0, fontSize: 17, fontWeight: 600, lineHeight: 1.65, color: "var(--ink)", textWrap: "pretty" };
+const H2 = { fontFamily: "var(--font-heading)", fontSize: "clamp(26px, 3vw, 34px)", fontWeight: 500, lineHeight: 1.2, letterSpacing: "-0.01em", margin: "48px 0 16px", color: "var(--charcoal)" };
+const UL = { margin: 0, paddingLeft: 22, display: "flex", flexDirection: "column", gap: 10, fontSize: 17, fontWeight: 600, lineHeight: 1.6, color: "var(--ink)" };
+const A = { color: "var(--orange-dark)", fontWeight: 800 };
+const S = { color: "var(--charcoal)", fontWeight: 800 };
 
-export default function Home() {
+const PROGRAMMES = [
+  ["Move Beyond Pain", "ongoing pain that stops you enjoying life (back, neck, hip, shoulder, knee and ankle pain, arthritis, sciatica, tendinopathies, repetitive strain injuries)."],
+  ["Recover Stronger", "safe recovery after surgery or injury (ACL rehab, shoulder surgery, hip and knee replacements, fractures, sports injuries, tendon repairs)."],
+  ["Move Better", "improve mobility, posture and strength before injuries start."],
+  ["Perform Better", "performance and injury prevention for golfers, runners, cyclists, padel, CrossFit, HYROX and active adults."],
+  ["Healthy Living", "guided exercise for diabetes, high blood pressure, obesity, high cholesterol, metabolic syndrome, cancer and cardiac rehabilitation."],
+  ["Stay Active for Life", "independence, strength and balance as you age (over 50s and 60s, osteoporosis, fall prevention)."],
+];
+
+export default function AiInfo() {
   return (
-    <PageShell current="/">
-      <JsonLd data={SCHEMA} />
-      <link rel="preload" as="image" href="/assets/hero-img.jpg" fetchPriority="high" />
+    <PageShell current="/ai-info">
+      <BandSection tone="white" width={768} paddingY={96}>
+        <Eyebrow tone="warm" size="base">Practice Summary</Eyebrow>
+        <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "var(--text-h1)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.01em", margin: "16px 0 24px", color: "var(--charcoal)", textWrap: "balance" }}>Esti Smit Biokinetics</h1>
+        <p style={P}>HPCSA-registered biokinetics practice in Paarl, Western Cape, South Africa. Esti Smit, Zani Van Zyl and Anya Bruwer provide personalised exercise therapy for pain, injury, post-operative rehabilitation, chronic conditions, sports performance and healthy ageing. Medical aid friendly.</p>
+        <p style={{ ...P, marginTop: 16 }}>Biokinetics is exercise therapy. It is the last stage of the recovery chain, between clinical treatment (such as physiotherapy or surgery) and everyday life. A biokineticist assesses how you move, finds the weak or switched-off muscles behind the pain, and builds a personalised exercise programme to restore strength and movement. No referral is needed to book.</p>
+        <p style={{ ...P, marginTop: 16 }}>The same summary is available as plain text at <a href="/llms.txt" style={A}>/llms.txt</a>.</p>
 
-      <PhotoSection image="/assets/hero-img.jpg" imageAlt="Esti Smit, biokineticist in Paarl, assessing a client's leg strength at Winelands Medical Centre" scrim="hero">
-        <div style={{ maxWidth: 896, margin: "0 auto", padding: "clamp(96px, 12vw, 160px) 24px clamp(112px, 13vw, 176px)", textAlign: "center" }}>
-          <h1 data-reveal="" data-reveal-delay="0" style={{ margin: "0 0 24px", fontFamily: "var(--font-body)", textTransform: "uppercase", fontSize: 16, fontWeight: 800, letterSpacing: "var(--tracking-eyebrow)", color: "var(--orange)", lineHeight: 1.5, textShadow: "var(--text-shadow-on-photo)" }}>Biokineticist in Paarl</h1>
-          <p data-reveal="" data-reveal-delay="120" style={{ color: "#fff", fontFamily: "var(--font-heading)", fontSize: "var(--text-h1)", lineHeight: 1.08, fontWeight: 500, letterSpacing: "-0.01em", margin: "0 0 28px", textWrap: "balance" }}>Still in Pain?<br />Let's Find What's Really Causing It.</p>
-          <p data-reveal="" data-reveal-delay="240" style={{ color: "rgba(255,255,255,.85)", fontSize: 18, lineHeight: 1.625, maxWidth: 672, margin: "0 auto 40px", textWrap: "pretty" }}>Registered biokineticists at Winelands Medical Centre, Paarl. We help with back pain, neck pain, sports injuries and rehab after surgery by finding the root cause, not just treating where it hurts.</p>
-          <div data-reveal="" data-reveal-delay="360" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16 }}>
-            <Button variant="primary" href={BOOK} iconRight="arrow-right">Book Your Assessment</Button>
-            <Button variant="whatsapp" href={WA} iconLeft="message-circle">WhatsApp Us</Button>
-          </div>
-          <p data-reveal="" data-reveal-delay="480" style={{ margin: "20px 0 0", fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,.8)", textShadow: "var(--text-shadow-on-photo)" }}>No referral needed · Medical aid friendly · Free phone call to see if we can help</p>
-        </div>
-      </PhotoSection>
+        <h2 style={H2}>Practice details</h2>
+        <ul style={UL}>
+          <li><span style={S}>Location:</span> Winelands Medical Centre, 1D New Eskdale Street, De Zoete Inval, Southern Paarl, Western Cape, South Africa</li>
+          <li><span style={S}>Phone and WhatsApp:</span> <a href="https://wa.me/27686104880" style={A}>068 610 4880</a></li>
+          <li><span style={S}>Email:</span> <a href="mailto:esti.healthplus@gmail.com" style={A}>esti.healthplus@gmail.com</a></li>
+          <li><span style={S}>Book an assessment:</span> <a href={BOOK} style={A}>Online diary</a></li>
+          <li><span style={S}>Team:</span> Esti Smit, Zani Van Zyl, Anya Bruwer (biokineticists)</li>
+          <li><span style={S}>Registration:</span> Health Professions Council of South Africa (HPCSA)</li>
+        </ul>
 
-      <section aria-label="Why patients trust us" style={{ background: "var(--blue)", overflow: "hidden", padding: "18px 0", borderTop: "1px solid rgba(255,255,255,.12)" }}>
-        <div className="esb-marquee-track" style={{ display: "flex", width: "max-content", animation: "esb-marquee 90s linear infinite" }}>
-          {Array.from({ length: 12 }, (_, i) => (
-            <div key={i} aria-hidden={i === 0 ? "false" : "true"} style={{ display: "flex", alignItems: "center", gap: 28, paddingRight: 28, flexShrink: 0, fontSize: 13, fontWeight: 800, letterSpacing: "0.14em", textTransform: "uppercase", color: "#fff", whiteSpace: "nowrap" }}>
-              <span aria-label="5 star Google reviews" style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
-                <span aria-hidden="true" data-stars="5" style={{ display: "inline-flex", gap: 2, color: "var(--orange)" }}>
-                  {[0, 1, 2, 3, 4].map((s) => <Icon key={s} name="star" size={15} color="var(--orange)" />)}
-                </span>
-                Google reviews
-              </span>
-              <span aria-hidden="true" style={{ color: "var(--orange-light)" }}>·</span><span>500+ clients helped</span>
-              <span aria-hidden="true" style={{ color: "var(--orange-light)" }}>·</span><span>HPCSA registered</span>
-              <span aria-hidden="true" style={{ color: "var(--orange-light)" }}>·</span>
-            </div>
-          ))}
-        </div>
-      </section>
+        <h2 style={H2}>Programmes</h2>
+        <ul style={UL}>{PROGRAMMES.map(([n, d]) => <li key={n}><span style={S}>{n}:</span> {d}</li>)}</ul>
 
-      <BandSection id="root-cause" tone="white" width={1152} paddingY={128}>
-        <div data-reveal="" style={{ marginBottom: 64 }}>
-          <SectionHeading eyebrow="Why the pain keeps coming back" eyebrowTone="warmInk" title="You've Rested It, Stretched It and Had It Massaged. So Why Does It Still Hurt?" subtitle="Often, the place that hurts isn't the real problem. After an injury, surgery or years of pain, some muscles stop working properly. Other muscles and joints take over the extra work, and that's where the back, knee, neck or shoulder pain starts. Treating only the sore spot brings short relief, and then it comes back." maxWidth={768} />
-        </div>
-        <ol style={{ listStyle: "none", margin: "0 0 56px", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: 28 }}>
-          {ROOT_STEPS.map((s, i) => (
-            <li key={s.n} data-reveal="" className="esb-lift" style={{ display: "flex", flexDirection: "column", gap: 16, background: "#fff", border: "1px solid var(--line)", borderRadius: "var(--radius-card-lg)", padding: "36px 30px" }}>
-              <span data-reveal="" data-reveal-type="pop" data-reveal-delay={String(350 + i * 220)} style={{ display: "inline-flex", alignSelf: "flex-start" }}><IconChip variant={s.accent} size={56}><span style={{ fontFamily: "var(--font-heading)", fontSize: 20, fontWeight: 600 }}>{s.n}</span></IconChip></span>
-              <h3 style={{ fontFamily: "var(--font-heading)", fontSize: 24, fontWeight: 500, letterSpacing: "var(--tracking-display)", lineHeight: 1.25, margin: 0, color: "var(--charcoal)" }}>{s.title}</h3>
-              <p style={{ fontSize: 16, fontWeight: 600, lineHeight: "var(--leading-body)", color: "var(--muted)", margin: 0 }}>{s.text}</p>
-            </li>
-          ))}
-        </ol>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button variant="primary" href={BOOK} iconRight="arrow-right">Find Out What's Causing Your Pain</Button>
-        </div>
-      </BandSection>
+        <h2 style={H2}>Conditions and areas treated</h2>
+        <p style={P}>Knee, hip, neck and shoulder, low back, foot and ankle, elbow and wrist pain and injuries; balance, posture and healthy ageing; disabilities and neurological conditions (stroke recovery, cerebral palsy, multiple sclerosis, Parkinson's disease, spinal cord injury); athletes and sports performance; chronic conditions.</p>
 
-      <Conditions regions={REGIONS} />
+        <h2 style={H2}>Medical aid</h2>
+        <ul style={UL}>
+          <li>In most cases, biokinetics sessions are paid from your medical savings account. Some schemes and benefit options give additional cover. Coverage depends on your plan and available benefits.</li>
+          <li>Discovery Vitality: Health Check (up to 22,500 Vitality points) and Fitness Assessment (R580, up to 10,000 additional points).</li>
+          <li>Momentum Multiply: Health Assessment and Fitness Assessment (R480).</li>
+          <li>Medscheme weight management programme for members of participating schemes such as Polmed, Fedhealth, AECI Medical Aid Society and SAMWUMED.</li>
+        </ul>
 
-      <BandSection id="stories" tone="grey" width={1280} paddingY={128}>
-        <div data-reveal="" style={{ marginBottom: 64 }}>
-          <SectionHeading eyebrow="Real results" eyebrowTone="warmInk" title="Success Stories" />
-        </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: 24 }}>
-          {TESTIMONIALS.map((t) => (
-            <article key={t.name} data-reveal="" style={{ height: "100%" }}><TestimonialCard {...t} /></article>
-          ))}
-        </div>
-      </BandSection>
-
-      <PhotoSection image="/assets/faq-bg.jpg" imageAlt="Biokineticist guiding a client through a single-leg balance exercise on a balance trainer in Paarl" scrim="hero">
-        <div id="faq" style={{ maxWidth: 1024, margin: "0 auto", padding: "128px 24px", scrollMarginTop: 84 }}>
-          <div data-reveal="" style={{ marginBottom: 56 }}>
-            <SectionHeading eyebrow="Questions" eyebrowTone="warm" onDark onPhoto title="Frequently Asked Questions" />
-          </div>
-          <div style={{ background: "rgba(255,255,255,.72)", backdropFilter: "blur(4px)", borderRadius: "var(--radius-card-lg)", padding: "12px 32px" }}>
-            <FaqAccordion items={FAQS} defaultOpen={0} />
-          </div>
-        </div>
-      </PhotoSection>
-
-      <BandSection id="book" tone="blue" grain width={768} paddingY={128}>
-        <div data-reveal="" style={{ textAlign: "center" }}>
-          <h2 style={h2}>Pain doesn't have to become your normal. Let's find the cause and build a personalised plan that gets you moving confidently again.</h2>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16 }}>
-            <Button variant="white" href={BOOK} iconRight="arrow-right">Book Your Assessment</Button>
-            <Button variant="ghostWhite" href={WA} iconLeft="message-circle">Send Us a WhatsApp</Button>
-          </div>
-        </div>
-      </BandSection>
-
-      <BandSection id="contact" tone="white" width={1024} paddingY={128}>
-        <div data-reveal="" style={{ marginBottom: 56 }}>
-          <SectionHeading eyebrow="Get in touch" eyebrowTone="cool" title="Come See Us, or Send a Message" />
-        </div>
-        <div data-reveal="" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: 20 }}>
-          <InfoCard icon="map-pin" title="Visit the practice">
-            <address style={{ fontStyle: "normal" }}><a href={MAPS} target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "none" }}>Winelands Medical Centre<br />1D New Eskdale Street, De Zoete Inval<br />Southern Paarl</a></address>
-          </InfoCard>
-          <InfoCard icon="phone" title="Call or WhatsApp">
-            <a href={WA} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>068 610 4880</a><br />
-            <span style={{ fontSize: 12 }}>Emergencies (personal): <a href="https://wa.me/27729761332" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>072 976 1332</a></span>
-          </InfoCard>
-          <InfoCard icon="mail" title="Email" style={{ gridColumn: "1 / -1" }}>
-            <a href={GMAIL} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>esti.healthplus@gmail.com</a>
-          </InfoCard>
-        </div>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, marginTop: 40 }}>
-          <Button variant="whatsapp" href={WA} iconLeft="message-circle">Send Us a WhatsApp</Button>
-          <Button variant="primary" href={BOOK} iconRight="arrow-right">Book Your Assessment</Button>
-        </div>
+        <h2 style={H2}>Main pages</h2>
+        <ul style={UL}>
+          <li><a href="/" style={A}>Home</a></li>
+          <li><a href="/can-biokinetics-help-me" style={A}>Can Biokinetics Help Me?</a></li>
+          <li><a href="/medical-aid" style={A}>Medical Aid</a></li>
+          <li><a href="/blog" style={A}>Blog</a></li>
+        </ul>
       </BandSection>
     </PageShell>
   );
