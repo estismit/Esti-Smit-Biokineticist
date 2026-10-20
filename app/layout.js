@@ -8,6 +8,7 @@ export const metadata = {
   title: "Biokineticist in Paarl | Esti Smit Biokinetics",
   description: "HPCSA-registered biokineticists in Paarl. Personalised exercise therapy for back pain, injury and post-op rehab. Medical aid friendly. Book your assessment.",
   robots: { index: true, follow: true, "max-image-preview": "large" },
+  verification: { google: "9O6ea6Q1EkXZLtZ7kY_iqeuM_VYhLSfhIjRayY_Q7dQ" },
   themeColor: "#e58749",
   manifest: "/site.webmanifest",
   icons: { icon: [{ url: "/icons/favicon-32.png", sizes: "32x32" }, { url: "/icons/favicon-192.png", sizes: "192x192" }], apple: "/icons/favicon-180.png" },
